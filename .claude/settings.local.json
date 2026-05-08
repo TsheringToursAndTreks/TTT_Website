@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Recurse \"c:\\\\Users\\\\asusb\\\\Desktop\\\\TTT_Website\\\\tshering-tours\\\\src\" | Where-Object { $_.Name -match \"tour|Tour\" } | Select-Object FullName)",
+      "Bash(npm run *)"
+    ]
+  }
+}
