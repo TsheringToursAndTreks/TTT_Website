@@ -88,7 +88,7 @@ const contactItems = [
           +975 17115200
         </a>
         <p className="text-gray-400 text-xs font-sans mt-0.5">
-          Office: +975 2 365044
+          Office: +975 2 365044 · Fax: +975 2 365247
         </p>
       </div>
     ),

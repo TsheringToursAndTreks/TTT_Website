@@ -239,7 +239,7 @@ export default function HomePage() {
                   kingdom.
                 </p>
                 <p className="font-display italic text-xl text-brand-dark mb-10">
-                  — Passang Tshering, Founder
+                  — Tshering Wangdi, Founder &amp; Owner
                 </p>
                 <ul className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray-600 space-y-2 mb-10">
                   {[
@@ -271,8 +271,8 @@ export default function HomePage() {
                   {[
                     { name: "Geo Reisen", country: "Austria" },
                     { name: "Die Zeit Reisen", country: "Germany" },
-                    { name: "Unique Destinations", country: "United Kingdom" },
-                    { name: "Thika Travels", country: "Kenya" },
+                    { name: "Unique Destinations", country: "South Africa" },
+                    { name: "Thika Travels", country: "Netherlands" },
                   ].map((partner, i) => (
                     <div
                       key={i}

@@ -33,30 +33,30 @@ const values = [
 
 const team = [
   {
-    initials: "PT",
-    name: "Passang Tshering",
-    role: "Founder & Managing Director",
-    bio: "Born and raised in Bhutan, Passang established TTT Tshering Tours & Treks in 2005 with a vision to share his homeland's extraordinary culture and landscapes with the world. His deep connections across Bhutan ensure every journey goes beyond the tourist trail.",
+    initials: "TW",
+    name: "Tshering Wangdi",
+    role: "Founder & Owner",
+    bio: "Born and raised in Bhutan, Tshering Wangdi established TTT Tshering Tours & Treks in 2005 with a vision to share his homeland's extraordinary culture and landscapes with the world. His deep connections across Bhutan ensure every journey goes beyond the tourist trail.",
   },
   {
-    initials: "KD",
-    name: "Karma Dorji",
-    role: "Senior Trekking Guide",
-    bio: "Certified high-altitude mountain guide with extensive expertise in Bhutan's most demanding trails — from the Chomolhari Base Camp to the legendary Snowman Trek across the Lunana wilderness.",
+    initials: "རི",
+    name: "Our Trekking Guides",
+    role: "Certified Mountain Guides",
+    bio: "Our treks are led by certified Bhutanese mountain guides with deep experience of the kingdom's trails — from gentle valley walks to the high passes of the Chomolhari and Snowman routes — supported by cooks and horsemen from the villages along the way.",
   },
   {
-    initials: "PL",
-    name: "Pema Lhamo",
-    role: "Cultural Guide & Interpreter",
-    bio: "A passionate storyteller fluent in four languages, Pema brings Bhutanese history, Buddhist art, and living traditions vividly to life for visitors from around the world.",
+    initials: "ལམ",
+    name: "Our Cultural Guides",
+    role: "Licensed by the Tourism Council",
+    bio: "Every cultural journey is accompanied by a licensed Bhutanese guide — storytellers who bring the kingdom's history, Buddhist art, festivals, and living traditions vividly to life in fluent English.",
   },
 ];
 
 const partners = [
   { name: "Geo Reisen", country: "Austria" },
   { name: "Die Zeit Reisen", country: "Germany" },
-  { name: "Unique Destinations", country: "United Kingdom" },
-  { name: "Thika Travels", country: "Kenya" },
+  { name: "Unique Destinations", country: "South Africa" },
+  { name: "Thika Travels", country: "Netherlands" },
 ];
 
 function SectionHeader({
@@ -129,7 +129,7 @@ export default function AboutPage() {
                   interests, your pace, and your desire to truly know Bhutan.
                 </p>
                 <p className="font-display italic text-xl text-brand-dark mb-10">
-                  — Passang Tshering, Founder
+                  — Tshering Wangdi, Founder &amp; Owner
                 </p>
                 <ul className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray-600 space-y-2">
                   {[
@@ -220,27 +220,58 @@ export default function AboutPage() {
               title="Meet our team"
             />
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-12">
-            {team.map((member, i) => (
-              <FadeUp key={i} delay={i * 0.1}>
-                <article className="border-t-2 border-brand-maroon pt-6 h-full">
-                  <div className="w-14 h-14 bg-brand-maroon flex items-center justify-center mb-5">
-                    <span className="font-display text-lg font-semibold text-brand-yellow">
-                      {member.initials}
-                    </span>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            <FadeUp className="lg:col-span-5">
+              <figure className="max-w-sm mx-auto lg:mx-0 lg:sticky lg:top-28">
+                <div className="relative">
+                  <div
+                    aria-hidden="true"
+                    className="absolute -right-3 -bottom-3 w-full h-full border border-brand-maroon/40"
+                  />
+                  <div className="relative aspect-square overflow-hidden bg-brand-dark">
+                    <Image
+                      src="/ourteam.jpg"
+                      alt="The TTT Tshering Tours team in traditional gho, holding the company sign"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 24rem, 24rem"
+                    />
                   </div>
-                  <h3 className="font-display text-2xl font-semibold text-brand-dark">
-                    {member.name}
-                  </h3>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-brand-orange mt-2 mb-4">
-                    {member.role}
-                  </p>
-                  <p className="text-gray-600 text-sm leading-relaxed font-sans">
-                    {member.bio}
-                  </p>
-                </article>
-              </FadeUp>
-            ))}
+                </div>
+                <figcaption className="flex items-center gap-3 mt-5 font-mono text-[10px] uppercase tracking-[0.2em] text-gray-500">
+                  <span className="text-brand-orange">✦</span>
+                  The TTT team · Thimphu
+                </figcaption>
+              </figure>
+            </FadeUp>
+            <div className="lg:col-span-7 space-y-12">
+              {team.map((member, i) => (
+                <FadeUp key={i} delay={i * 0.1}>
+                  <article className="border-t-2 border-brand-maroon pt-6">
+                    <div className="w-14 h-14 bg-brand-maroon flex items-center justify-center mb-5">
+                      <span
+                        className={`text-lg font-semibold text-brand-yellow ${
+                          member.initials.charCodeAt(0) > 127
+                            ? "font-tibetan"
+                            : "font-display"
+                        }`}
+                      >
+                        {member.initials}
+                      </span>
+                    </div>
+                    <h3 className="font-display text-2xl font-semibold text-brand-dark">
+                      {member.name}
+                    </h3>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-brand-orange mt-2 mb-4">
+                      {member.role}
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed font-sans">
+                      {member.bio}
+                    </p>
+                  </article>
+                </FadeUp>
+              ))}
+            </div>
           </div>
         </div>
       </section>

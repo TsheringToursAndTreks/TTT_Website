@@ -3,7 +3,7 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ??
   process.env.URL ??
-  "https://tsheringtours.com";
+  "https://www.tsheringtoursbhutan.com";
 
 export const SITE_NAME = "TTT Tshering Tours and Treks";
 

@@ -25,6 +25,10 @@ const jsonLd = {
   telephone: "+975-17115200",
   email: "ttt.wangdi@gmail.com",
   foundingDate: "2005",
+  founder: {
+    "@type": "Person",
+    name: "Tshering Wangdi",
+  },
   address: {
     "@type": "PostalAddress",
     streetAddress: "SD Building Above Nima High School, P.O. Box 767",
