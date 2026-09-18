@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Building2, TreePine, Home } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import FadeUp from "@/components/FadeUp";
 import PageHero from "@/components/PageHero";
+import PrayerFlags from "@/components/PrayerFlags";
 
 export const metadata: Metadata = {
   title: "Hotels & Accommodation | TTT Tshering Tours and Treks",
@@ -71,19 +72,16 @@ const luxuryHotels = [
 
 const accommodationTypes = [
   {
-    icon: <Building2 size={26} className="text-brand-orange" />,
     title: "Hotels & Guest Houses",
     description:
       "Our standard tours use comfortable 3-star hotels throughout Bhutan, typically featuring television, room service, spa, and Wi-Fi. Every room is arranged for scenic valley views where possible. We have close relationships with properties in all major towns.",
   },
   {
-    icon: <TreePine size={26} className="text-brand-orange" />,
     title: "Resorts",
     description:
       "Bhutan's boutique resorts offer an elevated experience — many designed by award-winning architects using traditional materials and techniques. We work closely with 5-star properties including Amankora, Taj Tashi, and Uma by Como for guests seeking the finest accommodation.",
   },
   {
-    icon: <Home size={26} className="text-brand-orange" />,
     title: "Farm-Stays & Homestays",
     description:
       "For an authentically Bhutanese experience, we arrange stays with local farming families in their traditional homes. Guests dine with the family, participate in daily activities, and gain a genuine understanding of rural Bhutanese life that no hotel can replicate.",
@@ -101,33 +99,34 @@ export default function HotelsPage() {
       />
 
       {/* Accommodation types */}
-      <section className="py-20 bg-white">
+      <section className="py-20 lg:py-24 bg-paper">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
-            <div className="text-center mb-14">
-              <p className="text-brand-orange font-sans font-bold uppercase tracking-[0.25em] text-xs mb-3">
-                Choose Your Style
+            <div className="border-b border-brand-dark/15 pb-5 mb-14">
+              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-brand-orange mb-4">
+                01 / Choose Your Style
               </p>
-              <h2 className="font-display text-4xl font-bold text-brand-dark">
-                Accommodation Types
+              <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight text-brand-dark max-w-3xl">
+                Three ways to stay
               </h2>
-              <div className="w-16 h-1 bg-brand-orange mx-auto mt-4 rounded-full" />
             </div>
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+          <div className="divide-y divide-brand-dark/10">
             {accommodationTypes.map((type, i) => (
-              <FadeUp key={i} delay={i * 0.15}>
-                <div className="bg-gray-50 rounded-2xl p-7 border border-gray-100 hover:shadow-lg hover:border-orange-100 transition-all duration-300 group h-full">
-                  <div className="w-12 h-12 rounded-xl bg-white border border-gray-200 group-hover:border-orange-200 group-hover:bg-orange-50 transition-all flex items-center justify-center mb-6 shadow-sm">
-                    {type.icon}
-                  </div>
-                  <h3 className="font-display text-xl font-bold text-brand-dark mb-3">
+              <FadeUp key={i} delay={i * 0.1}>
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-10 items-baseline">
+                  <span
+                    aria-hidden="true"
+                    className="md:col-span-2 font-display italic text-6xl text-brand-maroon/25 leading-none"
+                  >
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="md:col-span-4 font-display text-2xl font-semibold text-brand-dark">
                     {type.title}
                   </h3>
-                  <p className="text-gray-600 font-sans text-sm leading-relaxed mb-5">
+                  <p className="md:col-span-6 text-gray-600 font-sans leading-relaxed">
                     {type.description}
                   </p>
-                  <div className="h-0.5 w-10 bg-brand-orange rounded-full group-hover:w-16 transition-all duration-500" />
                 </div>
               </FadeUp>
             ))}
@@ -136,58 +135,43 @@ export default function HotelsPage() {
       </section>
 
       {/* Luxury Hotels */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 lg:py-24 bg-paper-deep/60 border-t border-brand-dark/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
-            <div className="text-center mb-14">
-              <p className="text-brand-orange font-sans font-bold uppercase tracking-[0.25em] text-xs mb-3">
-                World-Class Stays
+            <div className="border-b border-brand-dark/15 pb-5 mb-14">
+              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-brand-orange mb-4">
+                02 / World-Class Stays
               </p>
-              <h2 className="font-display text-4xl font-bold text-brand-dark">
-                Luxury Hotels in Bhutan
+              <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight text-brand-dark max-w-3xl mb-4">
+                Luxury hotels in Bhutan
               </h2>
-              <div className="w-16 h-1 bg-brand-orange mx-auto mt-4 rounded-full" />
-              <p className="text-gray-500 font-sans text-sm mt-4 max-w-xl mx-auto">
+              <p className="text-gray-600 font-sans max-w-xl">
                 TTT Tshering Tours has close connections with Bhutan&apos;s
                 finest 5-star hotels. We arrange stays at any of these
                 properties as part of your tailor-made tour.
               </p>
             </div>
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-12">
             {luxuryHotels.map((hotel, i) => (
-              <FadeUp key={i} delay={i * 0.08}>
-                <div className="bg-white rounded-2xl border border-gray-100 hover:shadow-lg hover:border-orange-100 transition-all duration-300 h-full flex flex-col">
-                  <div className="p-7 flex flex-col flex-1">
-                    <div className="flex items-start justify-between mb-2">
-                      <div className="flex-1 min-w-0 pr-2">
-                        <h3 className="font-display text-xl font-bold text-brand-dark">
-                          {hotel.name}
-                        </h3>
-                        <p className="text-brand-orange font-sans text-xs font-bold uppercase tracking-wider mt-0.5">
-                          {hotel.type}
-                        </p>
-                      </div>
-                      <div className="flex gap-0.5 shrink-0">
-                        {Array.from({ length: hotel.stars }).map((_, si) => (
-                          <span
-                            key={si}
-                            className="text-brand-yellow text-sm"
-                          >
-                            ★
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    <p className="text-gray-400 font-sans text-xs font-semibold mb-4 flex items-center gap-1">
-                      <span className="text-brand-orange">📍</span>{" "}
-                      {hotel.locations}
-                    </p>
-                    <p className="text-gray-600 font-sans text-sm leading-relaxed flex-1">
-                      {hotel.description}
-                    </p>
-                  </div>
-                </div>
+              <FadeUp key={i} delay={i * 0.06}>
+                <article className="border-t-2 border-brand-maroon pt-5 h-full flex flex-col">
+                  <p
+                    className="font-mono text-brand-orange text-xs tracking-[0.3em] mb-3"
+                    aria-label={`${hotel.stars} star property`}
+                  >
+                    {"★".repeat(hotel.stars)}
+                  </p>
+                  <h3 className="font-display text-2xl font-semibold text-brand-dark">
+                    {hotel.name}
+                  </h3>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-gray-500 mt-2 mb-4">
+                    {hotel.type} · {hotel.locations}
+                  </p>
+                  <p className="text-gray-600 font-sans text-sm leading-relaxed flex-1">
+                    {hotel.description}
+                  </p>
+                </article>
               </FadeUp>
             ))}
           </div>
@@ -195,21 +179,23 @@ export default function HotelsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-brand-maroon py-20">
-        <div className="max-w-2xl mx-auto px-4 text-center">
+      <section className="bg-brand-maroon">
+        <PrayerFlags className="text-brand-yellow" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <FadeUp>
-            <h2 className="font-display text-3xl font-bold text-white mb-3">
-              Let Us Arrange Your Stay
+            <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight text-white mb-4">
+              Let us arrange your stay
             </h2>
-            <p className="text-gray-300 font-sans mb-6">
+            <p className="text-gray-300 font-sans text-lg mb-8 max-w-xl">
               Whether you prefer a farm-stay or a five-star lodge, we handle all
               accommodation as part of your tailor-made Bhutan package.
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-brand-yellow text-brand-dark px-9 py-3.5 rounded-full font-sans font-bold hover:bg-white transition-colors"
+              className="inline-flex items-center gap-2.5 bg-brand-yellow text-brand-dark px-9 py-4 font-sans font-bold text-sm tracking-wide hover:bg-white transition-colors"
             >
-              Enquire About Accommodation
+              Enquire about accommodation
+              <ArrowRight size={16} />
             </Link>
           </FadeUp>
         </div>

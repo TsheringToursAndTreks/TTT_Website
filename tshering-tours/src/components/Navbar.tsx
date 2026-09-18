@@ -66,7 +66,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-mono text-[9px] lg:text-[10px] uppercase tracking-[0.1em] lg:tracking-[0.15em] transition-colors duration-200 whitespace-nowrap pb-1 border-b ${
+                className={`font-mono text-[9px] lg:text-[10px] uppercase tracking-widest lg:tracking-[0.15em] transition-colors duration-200 whitespace-nowrap pb-1 border-b ${
                   pathname === link.href
                     ? "text-brand-maroon border-brand-maroon"
                     : "text-brand-dark/80 border-transparent hover:text-brand-maroon"

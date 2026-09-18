@@ -152,22 +152,21 @@ export default function TravelInformationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
             <div className="text-center mb-14">
-              <p className="text-brand-orange font-sans font-bold uppercase tracking-[0.25em] text-xs mb-3">
+              <p className="font-mono text-brand-orange uppercase tracking-[0.3em] text-[11px] mb-4">
                 Entry Requirements
               </p>
               <h2 className="font-display text-4xl font-bold text-brand-dark">
                 Getting Into Bhutan
               </h2>
-              <div className="w-16 h-1 bg-brand-orange mx-auto mt-4 rounded-full" />
             </div>
           </FadeUp>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {entryCards.map((card, i) => (
               <FadeUp key={i} delay={i * 0.1}>
-                <div className="bg-gray-50 rounded-2xl p-7 border border-gray-100 hover:shadow-lg hover:border-orange-100 transition-all duration-300 group h-full">
+                <div className="bg-white border border-brand-dark/15 p-7 hover:border-brand-maroon/40 transition-all duration-300 group h-full">
                   <div
-                    className={`w-12 h-12 rounded-xl ${card.iconBg} border border-gray-100 group-hover:border-orange-200 transition-all flex items-center justify-center mb-5`}
+                    className={`w-12 h-12 ${card.iconBg} border border-gray-100 group-hover:border-orange-200 transition-all flex items-center justify-center mb-5`}
                   >
                     {card.icon}
                   </div>
@@ -195,13 +194,12 @@ export default function TravelInformationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
             <div className="text-center mb-12">
-              <p className="text-brand-orange font-sans font-bold uppercase tracking-[0.25em] text-xs mb-3">
+              <p className="font-mono text-brand-orange uppercase tracking-[0.3em] text-[11px] mb-4">
                 Plan Around the Celebrations
               </p>
               <h2 className="font-display text-4xl font-bold text-brand-dark">
                 Key Festival Dates
               </h2>
-              <div className="w-16 h-1 bg-brand-orange mx-auto mt-4 rounded-full" />
               <p className="text-gray-500 font-sans text-sm mt-4 max-w-xl mx-auto">
                 Tshechu festivals are among the world&apos;s most extraordinary
                 cultural spectacles. Timing your visit with one is highly
@@ -212,7 +210,7 @@ export default function TravelInformationPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {festivals2025.map((f, i) => (
               <FadeUp key={i} delay={i * 0.05}>
-                <div className="bg-white rounded-xl border border-gray-100 hover:shadow-md hover:border-orange-100 transition-all duration-300 p-5">
+                <div className="bg-white border border-brand-dark/15 hover:border-brand-maroon/40 transition-all duration-300 p-5">
                   <h4 className="font-display font-bold text-brand-dark text-sm mb-1">
                     {f.name}
                   </h4>

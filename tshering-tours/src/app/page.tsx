@@ -269,7 +269,7 @@ export default function HomePage() {
                 </p>
                 <div>
                   {[
-                    { name: "Geo Reisen", country: "Germany" },
+                    { name: "Geo Reisen", country: "Austria" },
                     { name: "Die Zeit Reisen", country: "Germany" },
                     { name: "Unique Destinations", country: "United Kingdom" },
                     { name: "Thika Travels", country: "Kenya" },

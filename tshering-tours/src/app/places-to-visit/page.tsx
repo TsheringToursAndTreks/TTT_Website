@@ -19,7 +19,7 @@ const regions = [
       {
         name: "Thimphu",
         image:
-          "https://images.unsplash.com/photo-1650747857310-c359fd3ee5c5?w=900&q=80",
+          "/img/buddha-dordenma.jpg",
         alt: "The great bronze Buddha Dordenma statue above Thimphu",
         description:
           "Bhutan's vibrant capital — one of the world's few capitals without a traffic light. Visit the Memorial Chorten, National Textile Museum, Folk Heritage Museum, and the 51-metre Buddha Dordenma statue. The Tashichho Dzong houses the government and the monk body. The Weekend Market is a riot of local produce and handicrafts.",
@@ -28,7 +28,7 @@ const regions = [
       {
         name: "Paro",
         image:
-          "https://images.unsplash.com/photo-1638246439638-b37095b34879?w=900&q=80",
+          "/img/tigers-nest-cliff.jpg",
         alt: "The Tiger's Nest monastery on its cliff face above the Paro valley",
         description:
           "Home to the iconic Tiger's Nest (Paro Taktsang) — arguably Asia's most dramatic monastery, perched on a sheer cliff 900m above the valley floor. The Paro Museum (Ta Dzong) houses an extraordinary collection of Bhutanese history and culture. The valley is also home to Bhutan's only international airport.",
@@ -37,7 +37,7 @@ const regions = [
       {
         name: "Punakha",
         image:
-          "https://images.unsplash.com/photo-1608236475087-615bfbcdf772?w=900&q=80",
+          "/img/punakha-dzong.jpg",
         alt: "Punakha Dzong at the confluence of the Mo Chu and Pho Chu rivers",
         description:
           "The former winter capital of Bhutan, Punakha is dominated by its magnificent dzong — built at the confluence of the Mo Chu and Pho Chu rivers. Warmer and lower than Thimphu, the Punakha valley produces Bhutan's famous red rice. The annual Punakha Tshechu includes the re-enactment of a great 17th-century battle.",
@@ -54,7 +54,7 @@ const regions = [
       {
         name: "Wangdue Phodrang",
         image:
-          "https://images.unsplash.com/photo-1670992493225-e6a76acaca83?w=900&q=80",
+          "/img/gangtey-goemba.jpg",
         alt: "Gangtey Goemba monastery above the Phobjikha valley",
         description:
           "A strategic district commanding the pass between western and central Bhutan. The dzong — destroyed by fire in 2012 and currently being rebuilt — once dominated a rocky ridge above the Puna Tsang Chu. The surrounding farmland produces rice and maize, and traditional Rinchengang village is one of Bhutan's most photographed hamlets.",
@@ -76,7 +76,7 @@ const regions = [
       {
         name: "Bumthang",
         image:
-          "https://images.unsplash.com/photo-1583410612776-3c06d69b89c8?w=900&q=80",
+          "/img/jakar-dzong.jpg",
         alt: "Jakar Dzong in Bumthang, surrounded by trees",
         description:
           "Bhutan's spiritual heartland — a cluster of four sacred valleys containing some of the country's oldest temples. Jambay Lhakhang was built in 659 AD by Tibetan Emperor Songtsen Gampo. Kurje Lhakhang contains the body print of Guru Rinpoche left in the 8th century. Tamshing Lhakhang (1501) was founded by treasure-discoverer Pema Lingpa.",

@@ -9,9 +9,8 @@ export const metadata: Metadata = {
     "Reach TTT Tshering Tours and Treks in Thimphu, Bhutan by email, WhatsApp, or Facebook. Call +975 17115200 or email ttt.wangdi@gmail.com.",
 };
 
-// TODO: replace with the official Facebook page URL once available
 const FACEBOOK_URL =
-  "https://www.facebook.com/search/top?q=TTT%20Tshering%20Tours%20and%20Treks";
+  "https://www.facebook.com/profile.php?id=100054541446493";
 const GMAIL_COMPOSE_URL =
   "https://mail.google.com/mail/?view=cm&fs=1&to=ttt.wangdi@gmail.com&su=Bhutan%20Trip%20Inquiry";
 const WHATSAPP_URL =
@@ -68,7 +67,7 @@ const channels = [
     handle: "TTT Tshering Tours and Treks",
     desc: "Follow our journeys across Bhutan and send us a message on our page.",
     href: FACEBOOK_URL,
-    cta: "Find Us on Facebook",
+    cta: "Visit Our Page",
     icon: <FacebookIcon className="w-6 h-6" />,
     iconBg: "bg-blue-50 text-blue-600 border-blue-100",
     button: "bg-blue-600 hover:bg-blue-500",
@@ -167,9 +166,9 @@ export default function ContactPage() {
                   {contactItems.map((item, i) => (
                     <div
                       key={i}
-                      className="flex items-start gap-4 bg-gray-50 rounded-xl p-4 border border-gray-100"
+                      className="flex items-start gap-4 bg-white border border-brand-dark/10 p-4"
                     >
-                      <div className="w-10 h-10 rounded-lg bg-white border border-gray-200 flex items-center justify-center shrink-0 shadow-sm">
+                      <div className="w-10 h-10 bg-paper border border-brand-dark/15 flex items-center justify-center shrink-0 shadow-sm">
                         {item.icon}
                       </div>
                       <div className="min-w-0">
@@ -183,7 +182,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* What happens next */}
-                <div className="bg-brand-maroon/5 border border-brand-maroon/15 rounded-2xl p-7">
+                <div className="bg-brand-maroon/5 border border-brand-maroon/15 p-7">
                   <h3 className="font-display text-lg font-bold text-brand-dark mb-5">
                     What Happens Next?
                   </h3>
@@ -221,11 +220,11 @@ export default function ContactPage() {
                   {channels.map((channel) => (
                     <div
                       key={channel.name}
-                      className="bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-lg hover:border-orange-100 transition-all duration-300 p-6"
+                      className="bg-white border border-brand-dark/15 hover:border-brand-maroon/40 transition-all duration-300 p-6"
                     >
                       <div className="flex items-start gap-4">
                         <div
-                          className={`w-12 h-12 rounded-xl border flex items-center justify-center shrink-0 ${channel.iconBg}`}
+                          className={`w-12 h-12 border flex items-center justify-center shrink-0 ${channel.iconBg}`}
                         >
                           {channel.icon}
                         </div>
@@ -244,7 +243,7 @@ export default function ContactPage() {
                               href={channel.href}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className={`inline-flex items-center gap-2 text-white px-5 py-2.5 rounded-full font-sans font-bold text-sm transition-colors shadow-sm ${channel.button}`}
+                              className={`inline-flex items-center gap-2 text-white px-5 py-2.5 font-sans font-bold text-sm transition-colors shadow-sm ${channel.button}`}
                             >
                               {channel.cta}
                               <ArrowUpRight size={15} />
@@ -275,7 +274,7 @@ export default function ContactPage() {
               from the westernmost valleys of Haa and Paro to the remote eastern
               frontier of Trashigang and Trashiyangtse.
             </p>
-            <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-xl px-6 py-3 text-sm text-gray-600 font-sans shadow-sm">
+            <div className="inline-flex items-center gap-2 bg-white border border-brand-dark/15 px-6 py-3 text-sm text-gray-600 font-sans shadow-sm">
               <span className="text-brand-orange font-bold">✓</span>
               Tourism Council of Bhutan
               <span className="text-gray-300 mx-1">·</span>

@@ -36,7 +36,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3 mb-8">
               <a
-                href="https://www.facebook.com/search/top?q=TTT%20Tshering%20Tours%20and%20Treks"
+                href="https://www.facebook.com/profile.php?id=100054541446493"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -45,7 +45,9 @@ export default function Footer() {
                 <Share2 size={15} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/ttt_tshering_tours/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="w-9 h-9 border border-white/20 flex items-center justify-center text-gray-400 hover:text-brand-yellow hover:border-brand-yellow/50 transition-all"
               >

@@ -103,10 +103,10 @@ export default function HeroSection() {
                 aria-hidden="true"
                 className="absolute -right-4 -top-4 w-full h-full rounded-t-full border border-brand-maroon/40"
               />
-              <div className="relative rounded-t-full overflow-hidden aspect-[3/4] bg-brand-dark">
+              <div className="relative rounded-t-full overflow-hidden aspect-3/4 bg-brand-dark">
                 <Image
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200"
-                  alt="Himalayan peaks above the clouds"
+                  src="/img/himalaya.jpg"
+                  alt="Himalayan peaks rising above a sea of clouds at dusk"
                   fill
                   priority
                   className="object-cover"

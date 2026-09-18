@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { Award, Users, Leaf, Globe } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import FadeUp from "@/components/FadeUp";
 import PageHero from "@/components/PageHero";
+import PrayerFlags from "@/components/PrayerFlags";
 
 export const metadata: Metadata = {
   title: "About Us | TTT Tshering Tours and Treks",
@@ -12,24 +14,20 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    icon: <Award size={26} className="text-brand-orange" />,
     title: "Local Expertise",
     desc: "As native Bhutanese, we offer unparalleled insider knowledge of hidden gems, local customs, and authentic experiences that larger operators simply cannot provide.",
   },
   {
-    icon: <Users size={26} className="text-brand-orange" />,
     title: "Personalized Service",
     desc: "Every traveler is unique. We design bespoke itineraries tailored to your interests, fitness level, and budget — from luxury lodges to authentic cultural homestays.",
   },
   {
-    icon: <Leaf size={26} className="text-brand-orange" />,
     title: "Sustainable Tourism",
     desc: "We fully embrace Bhutan's 'High Value, Low Impact' tourism philosophy, prioritising eco-friendly practices and ensuring every visit benefits local communities.",
   },
   {
-    icon: <Globe size={26} className="text-brand-orange" />,
     title: "Global Partnerships",
-    desc: "Trusted by leading international travel agencies in Austria, Germany, South Africa, and the Netherlands — bringing Bhutan to travelers across four continents.",
+    desc: "Trusted by leading international travel agencies across Europe and beyond — bringing Bhutan to travelers from four continents.",
   },
 ];
 
@@ -57,9 +55,30 @@ const team = [
 const partners = [
   { name: "Geo Reisen", country: "Austria" },
   { name: "Die Zeit Reisen", country: "Germany" },
-  { name: "Unique Destinations", country: "South Africa" },
-  { name: "Thika Travels", country: "Netherlands" },
+  { name: "Unique Destinations", country: "United Kingdom" },
+  { name: "Thika Travels", country: "Kenya" },
 ];
+
+function SectionHeader({
+  number,
+  kicker,
+  title,
+}: {
+  number: string;
+  kicker: string;
+  title: string;
+}) {
+  return (
+    <div className="border-b border-brand-dark/15 pb-5 mb-14">
+      <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-brand-orange mb-4">
+        {number} / {kicker}
+      </p>
+      <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight text-brand-dark max-w-3xl">
+        {title}
+      </h2>
+    </div>
+  );
+}
 
 export default function AboutPage() {
   return (
@@ -72,77 +91,118 @@ export default function AboutPage() {
       />
 
       {/* Story */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 lg:py-24 bg-paper overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
-            <p className="text-brand-orange font-sans font-bold uppercase tracking-[0.25em] text-xs mb-3 text-center">
-              Who We Are
-            </p>
-            <h2 className="font-display text-4xl font-bold text-brand-dark mb-10 text-center">
-              Born in Bhutan, Built for You
-            </h2>
-
-            <div className="border-l-4 border-brand-orange pl-7 py-2 mb-10">
-              <p className="text-brand-dark font-display text-xl italic leading-relaxed">
-                &ldquo;In today&apos;s world of homogenized cultures and
-                contrived re-enactments of outgrown traditions, Bhutan&apos;s
-                pure and genuine cultural heritage is a priceless jewel.&rdquo;
-              </p>
-            </div>
-
-            <div className="space-y-5 text-gray-600 font-sans text-lg leading-relaxed">
-              <p>
-                TTT Tshering Tours & Treks was established in{" "}
-                <strong className="text-brand-dark">2005</strong> with the
-                technical expertise of its adviser, the Late Dr. Martin Uitz of
-                Austria, who was instrumental in drafting Bhutan&apos;s Tourism
-                Master Plan from 2003 to 2005. From those expert foundations, we
-                have grown into one of Bhutan&apos;s most trusted tour operators.
-              </p>
-              <p>
-                Based in <strong className="text-brand-dark">Thimphu</strong>,
-                the heart of Bhutan, we specialise in creating authentic,
-                immersive travel experiences across all regions of the kingdom —
-                from the western valleys of Paro and Punakha to the remote
-                eastern districts of Trashigang and Trashiyangtse.
-              </p>
-              <p>
-                Every journey we craft is a personal story — shaped by your
-                interests, your pace, and your desire to truly know Bhutan.
-              </p>
-            </div>
+            <SectionHeader
+              number="01"
+              kicker="Who We Are"
+              title="Born in Bhutan, built for you"
+            />
           </FadeUp>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            <FadeUp className="lg:col-span-7">
+              <div>
+                <p
+                  className="font-tibetan text-brand-maroon text-2xl mb-6"
+                  aria-hidden="true"
+                >
+                  ༄༅།
+                </p>
+                <p className="text-gray-600 font-sans leading-relaxed mb-5 text-[17px] first-letter:font-display first-letter:text-6xl first-letter:font-semibold first-letter:text-brand-maroon first-letter:float-left first-letter:mr-3 first-letter:leading-[0.85]">
+                  TTT Tshering Tours &amp; Treks was established in 2005 with
+                  the technical expertise of its adviser, the Late Dr. Martin
+                  Uitz of Austria, who was instrumental in drafting
+                  Bhutan&apos;s Tourism Master Plan from 2003 to 2005. From
+                  those expert foundations, we have grown into one of
+                  Bhutan&apos;s most trusted tour operators.
+                </p>
+                <p className="text-gray-600 font-sans leading-relaxed mb-5 text-[17px]">
+                  Based in Thimphu, the heart of Bhutan, we specialise in
+                  creating authentic, immersive travel experiences across all
+                  regions of the kingdom — from the western valleys of Paro and
+                  Punakha to the remote eastern districts of Trashigang and
+                  Trashiyangtse.
+                </p>
+                <p className="text-gray-600 font-sans leading-relaxed mb-8 text-[17px]">
+                  Every journey we craft is a personal story — shaped by your
+                  interests, your pace, and your desire to truly know Bhutan.
+                </p>
+                <p className="font-display italic text-xl text-brand-dark mb-10">
+                  — Passang Tshering, Founder
+                </p>
+                <ul className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray-600 space-y-2">
+                  {[
+                    "Established 2005 · Thimphu",
+                    "Adviser · Late Dr. Martin Uitz, Austria",
+                    "All regions · All seasons",
+                  ].map((line) => (
+                    <li key={line} className="flex items-center gap-3">
+                      <span className="text-brand-orange">✦</span>
+                      {line}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </FadeUp>
+            <FadeUp delay={0.15} className="lg:col-span-5">
+              <figure className="max-w-sm mx-auto lg:max-w-none">
+                <div className="relative">
+                  <div
+                    aria-hidden="true"
+                    className="absolute -right-4 -top-4 w-full h-full rounded-t-full border border-brand-maroon/40"
+                  />
+                  <div className="relative rounded-t-full overflow-hidden aspect-3/4 bg-brand-dark">
+                    <Image
+                      src="/img/buddha-dordenma.jpg"
+                      alt="The great Buddha Dordenma statue above Thimphu"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 24rem, 40vw"
+                    />
+                    <div className="absolute inset-0 bg-brand-maroon/15 mix-blend-multiply" />
+                  </div>
+                  <PrayerFlags
+                    count={16}
+                    className="absolute top-14 -left-6 -right-8 text-brand-dark -rotate-6"
+                  />
+                </div>
+                <figcaption className="flex items-baseline justify-between mt-4 font-mono text-[10px] uppercase tracking-[0.2em] text-gray-500">
+                  <span>Buddha Dordenma</span>
+                  <span>Thimphu — our home</span>
+                </figcaption>
+              </figure>
+            </FadeUp>
+          </div>
         </div>
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 lg:py-24 bg-paper-deep/60 border-y border-brand-dark/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
-            <div className="text-center mb-14">
-              <p className="text-brand-orange font-sans font-bold uppercase tracking-[0.25em] text-xs mb-3">
-                What Drives Us
-              </p>
-              <h2 className="font-display text-4xl font-bold text-brand-dark">
-                Our Values
-              </h2>
-              <div className="w-16 h-1 bg-brand-orange mx-auto mt-4 rounded-full" />
-            </div>
+            <SectionHeader
+              number="02"
+              kicker="What Drives Us"
+              title="Four promises we make to every traveler"
+            />
           </FadeUp>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+          <div className="divide-y divide-brand-dark/10">
             {values.map((item, i) => (
-              <FadeUp key={i} delay={i * 0.1}>
-                <div className="bg-white rounded-2xl p-7 border border-gray-100 hover:shadow-lg hover:border-orange-100 transition-all duration-300 group h-full">
-                  <div className="w-12 h-12 rounded-xl bg-orange-50 group-hover:bg-orange-100 transition-colors flex items-center justify-center mb-5">
-                    {item.icon}
-                  </div>
-                  <h3 className="font-display text-lg font-bold text-brand-dark mb-3">
+              <FadeUp key={i} delay={i * 0.08}>
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-10 items-baseline">
+                  <span
+                    aria-hidden="true"
+                    className="md:col-span-2 font-display italic text-6xl text-brand-maroon/25 leading-none"
+                  >
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="md:col-span-4 font-display text-2xl font-semibold text-brand-dark">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed font-sans mb-4">
+                  <p className="md:col-span-6 text-gray-600 font-sans leading-relaxed">
                     {item.desc}
                   </p>
-                  <div className="h-0.5 w-10 bg-brand-orange rounded-full group-hover:w-16 transition-all duration-500" />
                 </div>
               </FadeUp>
             ))}
@@ -151,38 +211,34 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-20 bg-white">
+      <section className="py-20 lg:py-24 bg-paper">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
-            <div className="text-center mb-14">
-              <p className="text-brand-orange font-sans font-bold uppercase tracking-[0.25em] text-xs mb-3">
-                The People Behind Your Journey
-              </p>
-              <h2 className="font-display text-4xl font-bold text-brand-dark">
-                Meet Our Team
-              </h2>
-              <div className="w-16 h-1 bg-brand-orange mx-auto mt-4 rounded-full" />
-            </div>
+            <SectionHeader
+              number="03"
+              kicker="The People Behind Your Journey"
+              title="Meet our team"
+            />
           </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-12">
             {team.map((member, i) => (
-              <FadeUp key={i} delay={i * 0.15}>
-                <div className="bg-gray-50 rounded-2xl p-7 border border-gray-100 hover:shadow-lg hover:border-orange-100 transition-all duration-300 h-full">
-                  <div className="w-16 h-16 rounded-2xl bg-brand-maroon/10 border border-brand-maroon/20 flex items-center justify-center mb-5">
-                    <span className="font-display text-xl font-bold text-brand-maroon">
+              <FadeUp key={i} delay={i * 0.1}>
+                <article className="border-t-2 border-brand-maroon pt-6 h-full">
+                  <div className="w-14 h-14 bg-brand-maroon flex items-center justify-center mb-5">
+                    <span className="font-display text-lg font-semibold text-brand-yellow">
                       {member.initials}
                     </span>
                   </div>
-                  <h3 className="font-display text-xl font-bold text-brand-dark mb-0.5">
+                  <h3 className="font-display text-2xl font-semibold text-brand-dark">
                     {member.name}
                   </h3>
-                  <p className="text-brand-orange font-sans font-semibold text-xs uppercase tracking-wider mb-4">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-brand-orange mt-2 mb-4">
                     {member.role}
                   </p>
                   <p className="text-gray-600 text-sm leading-relaxed font-sans">
                     {member.bio}
                   </p>
-                </div>
+                </article>
               </FadeUp>
             ))}
           </div>
@@ -190,71 +246,76 @@ export default function AboutPage() {
       </section>
 
       {/* International Partners */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 lg:py-24 bg-paper-deep/60 border-t border-brand-dark/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
-            <div className="text-center mb-12">
-              <p className="text-brand-orange font-sans font-bold uppercase tracking-[0.25em] text-xs mb-3">
-                Trusted Worldwide
-              </p>
-              <h2 className="font-display text-3xl font-bold text-brand-dark">
-                International Partners
-              </h2>
-              <div className="w-16 h-1 bg-brand-orange mx-auto mt-4 rounded-full" />
-            </div>
+            <SectionHeader
+              number="04"
+              kicker="Trusted Worldwide"
+              title="International partners"
+            />
           </FadeUp>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="max-w-3xl">
             {partners.map((p, i) => (
-              <FadeUp key={i} delay={i * 0.1}>
-                <div className="bg-white rounded-2xl p-7 text-center border border-gray-100 hover:shadow-md hover:border-orange-100 transition-all duration-300 group">
-                  <div className="w-10 h-10 rounded-xl bg-orange-50 group-hover:bg-orange-100 transition-colors flex items-center justify-center mx-auto mb-3">
-                    <Globe size={18} className="text-brand-orange" />
-                  </div>
-                  <p className="font-display font-bold text-brand-dark text-sm mb-0.5">
+              <FadeUp key={i} delay={i * 0.06}>
+                <div className="flex items-baseline justify-between py-5 border-b border-brand-dark/10 last:border-0">
+                  <span className="font-display text-xl font-semibold text-brand-dark">
                     {p.name}
-                  </p>
-                  <p className="text-gray-400 text-xs font-sans">{p.country}</p>
+                  </span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gray-500">
+                    {p.country}
+                  </span>
                 </div>
               </FadeUp>
             ))}
+            <p className="text-gray-500 font-sans text-sm mt-8 leading-relaxed">
+              Trusted by leading international travel companies to deliver
+              authentic, unforgettable Bhutan experiences.
+            </p>
           </div>
         </div>
       </section>
 
       {/* License */}
-      <section className="bg-brand-maroon py-20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 left-0 w-72 h-72 rounded-full bg-brand-yellow -translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 right-0 w-72 h-72 rounded-full bg-white translate-x-1/2 translate-y-1/2" />
-        </div>
-        <div className="relative max-w-3xl mx-auto px-4 text-center">
+      <section className="bg-brand-maroon relative overflow-hidden">
+        <PrayerFlags className="text-brand-yellow" />
+        <span
+          aria-hidden="true"
+          className="absolute -right-8 -bottom-20 font-tibetan text-[14rem] leading-none text-brand-yellow/10 select-none"
+        >
+          འབྲུག
+        </span>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <FadeUp>
-            <div className="border border-brand-yellow/30 rounded-2xl px-8 py-10">
-              <p className="text-brand-yellow font-sans font-bold uppercase tracking-[0.25em] text-xs mb-3">
-                Official Registrations
-              </p>
-              <h3 className="font-display text-2xl font-bold text-white mb-6">
-                Licensed & Certified Since 2005
-              </h3>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-                {["Tourism Council of Bhutan", "Association of Bhutan Tour Operators (ABTO)"].map((cert) => (
-                  <span key={cert} className="inline-flex items-center gap-2 text-sm text-gray-200 font-sans">
-                    <span className="text-brand-yellow">✓</span> {cert}
-                  </span>
-                ))}
-              </div>
-              <p className="text-gray-300 font-sans text-sm leading-relaxed max-w-lg mx-auto mb-8">
-                We operate fully in compliance with Bhutan&apos;s tourism
-                regulations, ensuring your journey is safe, legal, and
-                contributes to the nation&apos;s Gross National Happiness goals.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-block bg-brand-yellow text-brand-dark px-9 py-3.5 rounded-full font-sans font-bold hover:bg-white transition-colors"
-              >
-                Start Planning Your Trip
-              </Link>
-            </div>
+            <p className="font-mono text-brand-yellow text-[11px] uppercase tracking-[0.3em] mb-6">
+              ✦ Official Registrations
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight text-white mb-6 max-w-2xl">
+              Licensed &amp; certified since 2005
+            </h2>
+            <ul className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray-300 space-y-2.5 mb-8">
+              {[
+                "Tourism Council of Bhutan",
+                "Association of Bhutan Tour Operators (ABTO)",
+              ].map((cert) => (
+                <li key={cert} className="flex items-center gap-3">
+                  <span className="text-brand-yellow">✓</span>
+                  {cert}
+                </li>
+              ))}
+            </ul>
+            <p className="text-gray-300 font-sans leading-relaxed max-w-xl mb-10">
+              We operate fully in compliance with Bhutan&apos;s tourism
+              regulations, ensuring your journey is safe, legal, and
+              contributes to the nation&apos;s Gross National Happiness goals.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2.5 bg-brand-yellow text-brand-dark px-9 py-4 font-sans font-bold text-sm tracking-wide hover:bg-white transition-colors"
+            >
+              Start planning your trip
+              <ArrowRight size={16} />
+            </Link>
           </FadeUp>
         </div>
       </section>
