@@ -33,15 +33,24 @@ const entryCards = [
     content: (
       <>
         <p className="text-gray-600 font-sans text-sm leading-relaxed mb-3">
-          Once your travel dates are confirmed, TTT Tshering Tours &amp; Treks
-          handles all formalities required for entering Bhutan, including the
-          Visa Clearance Letter. All visitors must have this letter before
-          departure.
+          Tourist visas are processed online through a licensed Bhutanese tour
+          operator — that&apos;s us. Once your travel dates are confirmed, TTT
+          Tshering Tours &amp; Treks handles all formalities, including your
+          visa clearance, which must be approved before departure. A one-time,
+          non-refundable visa fee of{" "}
+          <strong className="text-brand-maroon">$40 USD</strong> applies.
+        </p>
+        <p className="text-gray-600 font-sans text-sm leading-relaxed mb-3">
+          Upon arrival at Paro International Airport, your clearance is
+          endorsed by immigration officers and your visa is stamped into your
+          passport. Your guide escorts you through this process seamlessly.
         </p>
         <p className="text-gray-600 font-sans text-sm leading-relaxed">
-          Upon arrival at Paro International Airport, the Visa Clearance Letter
-          is endorsed by immigration officers, and you will receive your Visa
-          Permit. Your guide will escort you through this process seamlessly.
+          <strong className="text-brand-dark">
+            Indian, Bangladeshi &amp; Maldivian nationals
+          </strong>{" "}
+          do not require this visa: Indian nationals travel on a permit, while
+          Bangladesh and Maldives passport holders receive a visa on arrival.
         </p>
       </>
     ),
@@ -90,14 +99,16 @@ const entryCards = [
           All visitors pay a Sustainable Development Fee (SDF) of{" "}
           <strong className="text-brand-maroon">
             $100 USD per person per night
-          </strong>{" "}
-          (reduced from $200 as of 2024). This fee is included in your tour
-          package and supports Bhutan&apos;s healthcare, education, and
-          environmental programmes.
+          </strong>
+          , a rate guaranteed through August 31, 2027. Children aged 6–12 pay
+          50%, children under 6 are exempt, and Indian nationals pay a reduced
+          rate of Nu/INR 1,200 per night. The fee supports Bhutan&apos;s
+          healthcare, education, and environmental programmes.
         </p>
         <p className="text-gray-600 font-sans text-sm leading-relaxed">
-          The SDF is not a barrier — it is an investment in the country you are
-          visiting, ensuring Bhutan remains pristine for generations to come.
+          From January 1, 2026, a 5% GST applies to tourism services in Bhutan
+          — the SDF and visa fee are exempt and unchanged. Both are handled
+          within your tour package: the price we quote is what you pay.
         </p>
       </>
     ),
@@ -168,6 +179,14 @@ export default function TravelInformationPage() {
               </FadeUp>
             ))}
           </div>
+          <FadeUp>
+            <p className="flex items-center justify-center gap-3 mt-10 font-mono text-[10px] uppercase tracking-[0.2em] text-gray-500 text-center">
+              <span className="text-brand-orange">✦</span>
+              Verified against the Ministry of Foreign Affairs of Bhutan ·
+              September 2026
+              <span className="text-brand-orange">✦</span>
+            </p>
+          </FadeUp>
         </div>
       </section>
 
@@ -223,7 +242,7 @@ export default function TravelInformationPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-brand-yellow text-brand-dark px-9 py-3.5 rounded-full font-sans font-bold hover:bg-white transition-colors"
+              className="inline-block bg-brand-yellow text-brand-dark px-9 py-4 font-sans font-bold text-sm tracking-wide hover:bg-white transition-colors"
             >
               Ask Us Anything
             </Link>
