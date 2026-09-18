@@ -2,107 +2,153 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import PrayerFlags from "@/components/PrayerFlags";
+
+const DESTINATIONS = [
+  "Paro",
+  "Thimphu",
+  "Punakha",
+  "Gangtey",
+  "Bumthang",
+  "Haa Valley",
+  "Trongsa",
+  "Trashigang",
+];
 
 export default function HeroSection() {
-  const scrollDown = () => {
-    window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
-  };
-
   return (
-    <section className="relative h-screen min-h-160 flex items-center justify-center overflow-hidden">
-      {/* Background image */}
-      <Image
-        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800"
-        alt="Himalayan mountain landscape in Bhutan"
-        fill
-        priority
-        className="object-cover object-center"
-        sizes="100vw"
-      />
-      {/* Dark maroon overlay */}
-      <div className="absolute inset-0 bg-linear-to-b from-brand-dark/80 via-brand-dark/60 to-brand-dark/80" />
+    <section className="relative bg-paper overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 lg:pt-40 pb-16 lg:pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          {/* Copy */}
+          <div className="lg:col-span-7">
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              className="mb-6"
+            >
+              <span className="font-tibetan text-brand-maroon text-xl mr-3 align-middle">
+                འབྲུག་ཡུལ།
+              </span>
+              <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-brand-orange align-middle">
+                Druk Yul — Land of the Thunder Dragon
+              </span>
+            </motion.p>
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-brand-yellow text-xs sm:text-sm uppercase tracking-[0.35em] font-sans font-bold mb-5"
-        >
-          ✦ Welcome to the Kingdom of Bhutan ✦
-        </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 32 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.15 }}
+              className="font-display text-5xl sm:text-6xl lg:text-7xl font-semibold text-brand-dark leading-[1.02] tracking-tight mb-8"
+            >
+              The kingdom that measures wealth in{" "}
+              <em className="text-brand-maroon">happiness.</em>
+            </motion.h1>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.15 }}
-          className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[1.1] mb-6"
-        >
-          Discover the Last{" "}
-          <span className="text-brand-yellow italic">Shangri-La</span>
-        </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+              className="text-gray-600 text-lg max-w-xl font-sans leading-relaxed mb-10"
+            >
+              Cultural journeys, Himalayan treks, and slow travel across Bhutan
+              — planned in Thimphu by the people who call these valleys home,
+              since 2005.
+            </motion.p>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.35 }}
-          className="text-gray-200 text-lg sm:text-xl mb-10 max-w-2xl mx-auto font-sans leading-relaxed"
-        >
-          Authentic Bhutan experiences crafted by locals — where every journey
-          transforms your understanding of happiness.
-        </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.55 }}
+              className="flex flex-wrap items-center gap-6 mb-12"
+            >
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2.5 bg-brand-maroon text-white px-8 py-4 font-sans font-semibold text-sm tracking-wide hover:bg-brand-dark transition-colors"
+              >
+                Plan your journey
+                <ArrowRight size={16} />
+              </Link>
+              <Link
+                href="/activities"
+                className="font-mono text-xs uppercase tracking-[0.2em] text-brand-dark border-b border-brand-dark/40 pb-1 hover:text-brand-maroon hover:border-brand-maroon transition-colors"
+              >
+                Explore activities
+              </Link>
+            </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-        >
-          <Link
-            href="/activities"
-            className="bg-brand-orange text-white px-9 py-4 rounded-full font-sans font-bold text-base sm:text-lg hover:bg-brand-red transition-all duration-300 hover:scale-105 shadow-lg shadow-brand-orange/30"
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.8 }}
+              className="font-mono text-[10px] uppercase tracking-[0.2em] text-gray-500"
+            >
+              Est. 2005 · Thimphu, Bhutan · Licensed by the Tourism Council of
+              Bhutan
+            </motion.p>
+          </div>
+
+          {/* Arched photo — a dzong window onto the Himalaya */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.3 }}
+            className="lg:col-span-5"
           >
-            Explore Activities
-          </Link>
-          <Link
-            href="/contact"
-            className="border-2 border-white text-white px-9 py-4 rounded-full font-sans font-bold text-base sm:text-lg hover:bg-white hover:text-brand-dark transition-all duration-300"
-          >
-            Contact Us
-          </Link>
-        </motion.div>
-
-        {/* Trust badges */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="flex flex-wrap justify-center gap-6 mt-12 text-xs text-gray-300 font-sans uppercase tracking-wider"
-        >
-          <span className="flex items-center gap-1.5">
-            <span className="text-brand-yellow">✓</span> Licensed Operator
-          </span>
-          <span className="flex items-center gap-1.5">
-            <span className="text-brand-yellow">✓</span> 500+ Happy Travelers
-          </span>
-          <span className="flex items-center gap-1.5">
-            <span className="text-brand-yellow">✓</span> 20+ Years Experience
-          </span>
-        </motion.div>
+            <div className="relative max-w-sm mx-auto lg:max-w-none">
+              {/* offset arch echo */}
+              <div
+                aria-hidden="true"
+                className="absolute -right-4 -top-4 w-full h-full rounded-t-full border border-brand-maroon/40"
+              />
+              <div className="relative rounded-t-full overflow-hidden aspect-[3/4] bg-brand-dark">
+                <Image
+                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200"
+                  alt="Himalayan peaks above the clouds"
+                  fill
+                  priority
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 24rem, 40vw"
+                />
+                <div className="absolute inset-0 bg-brand-maroon/20 mix-blend-multiply" />
+              </div>
+              <PrayerFlags
+                count={16}
+                className="absolute top-16 -left-6 -right-8 text-brand-dark -rotate-6"
+              />
+              <div className="flex items-baseline justify-between mt-4 font-mono text-[10px] uppercase tracking-[0.2em] text-gray-500">
+                <span>High Himalaya</span>
+                <span>27.5°N · 90.4°E</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
 
-      {/* Scroll arrow */}
-      <motion.button
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-brand-yellow cursor-pointer opacity-80 hover:opacity-100 transition-opacity"
-        onClick={scrollDown}
-        aria-label="Scroll down"
-      >
-        <ChevronDown size={38} strokeWidth={1.5} />
-      </motion.button>
+      {/* Destinations ticker */}
+      <div className="border-y border-brand-dark/15 bg-paper-deep/60 py-3 overflow-hidden">
+        <div className="flex w-max animate-marquee">
+          {[0, 1].map((copy) => (
+            <div
+              key={copy}
+              aria-hidden={copy === 1}
+              className="flex shrink-0 items-center"
+            >
+              {DESTINATIONS.map((place) => (
+                <span
+                  key={place}
+                  className="flex items-center font-mono text-[11px] uppercase tracking-[0.25em] text-brand-dark/70"
+                >
+                  <span className="px-6">{place}</span>
+                  <span className="text-brand-orange">✦</span>
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

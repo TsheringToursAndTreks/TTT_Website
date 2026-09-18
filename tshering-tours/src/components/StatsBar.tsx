@@ -7,15 +7,15 @@ export default function StatsBar() {
   ];
 
   return (
-    <section className="bg-brand-maroon py-14">
+    <section className="bg-brand-maroon py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10">
           {stats.map((stat, i) => (
-            <div key={i}>
-              <div className="font-display text-4xl md:text-5xl font-bold text-brand-yellow mb-1">
+            <div key={i} className="border-l border-white/20 pl-5 md:pl-7">
+              <div className="font-mono text-4xl md:text-5xl text-brand-yellow mb-2">
                 {stat.value}
               </div>
-              <div className="text-white text-xs font-sans uppercase tracking-widest font-semibold">
+              <div className="font-mono text-white/70 text-[10px] uppercase tracking-[0.25em]">
                 {stat.label}
               </div>
             </div>

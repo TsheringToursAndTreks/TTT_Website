@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BadgeCheck, Plane, Banknote, Lightbulb } from "lucide-react";
 import FadeUp from "@/components/FadeUp";
+import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "Travel Information | TTT Tshering Tours and Treks",
@@ -129,25 +130,11 @@ export default function TravelInformationPage() {
   return (
     <>
       {/* Hero */}
-      <div className="relative bg-brand-dark pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-brand-yellow translate-y-1/2 -translate-x-1/4" />
-          <div className="absolute top-0 right-0 w-56 h-56 rounded-full bg-brand-orange -translate-y-1/2 translate-x-1/4" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-brand-yellow font-sans font-bold uppercase tracking-[0.25em] text-xs mb-3">
-            Before You Arrive
-          </p>
-          <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-4">
-            Travel Information
-          </h1>
-          <div className="w-16 h-1 bg-brand-orange mx-auto rounded-full mb-5" />
-          <p className="text-gray-300 font-sans text-lg max-w-2xl mx-auto leading-relaxed">
-            Visa, flights, sustainable development fee, and everything you need
-            to know before departure.
-          </p>
-        </div>
-      </div>
+      <PageHero
+        eyebrow="Before You Arrive"
+        title="Travel Information"
+        description="Visa, flights, sustainable development fee, and everything you need to know before departure."
+      />
 
       {/* Getting into Bhutan */}
       <section className="py-20 bg-white">

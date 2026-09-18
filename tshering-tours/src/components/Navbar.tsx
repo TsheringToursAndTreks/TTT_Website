@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
+  { href: "/about", label: "About Us" },
   { href: "/about-bhutan", label: "About Bhutan" },
   { href: "/activities", label: "Activities" },
   { href: "/travel-information", label: "Travel Info" },
@@ -20,10 +21,8 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
 
-  const isHomepage = pathname === "/";
-
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60);
+    const handleScroll = () => setScrolled(window.scrollY > 40);
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -31,48 +30,46 @@ export default function Navbar() {
 
   const closeMobileMenu = () => setMobileOpen(false);
 
-  const transparent = isHomepage && !scrolled;
-
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        transparent ? "bg-transparent" : "bg-brand-maroon shadow-lg"
+      className={`fixed top-0 left-0 right-0 z-50 bg-paper/95 backdrop-blur border-b border-brand-dark/10 transition-shadow duration-300 ${
+        scrolled ? "shadow-md shadow-brand-dark/5" : ""
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group shrink-0">
-            <div className="w-13 h-13 rounded-full overflow-hidden shadow-md shrink-0 bg-white">
+          <Link href="/" className="flex items-center gap-3 group shrink-0">
+            <div className="w-12 h-12 rounded-full overflow-hidden shadow-sm shrink-0 bg-white border border-brand-dark/10">
               <Image
                 src="/ttt_logo.jpeg"
                 alt="TTT Tshering Tours and Treks"
-                width={52}
-                height={52}
+                width={48}
+                height={48}
                 className="object-cover w-full h-full"
                 priority
               />
             </div>
             <div className="hidden lg:block">
-              <p className="text-white font-display font-bold text-sm leading-tight group-hover:text-brand-yellow transition-colors">
+              <p className="font-display font-semibold text-brand-dark text-[15px] leading-tight group-hover:text-brand-maroon transition-colors">
                 Tshering Tours
               </p>
-              <p className="text-brand-yellow text-[10px] font-sans leading-none">
-                & Treks — Bhutan
+              <p className="font-mono text-brand-maroon text-[9px] uppercase tracking-[0.25em] leading-none mt-1">
+                &amp; Treks · Bhutan
               </p>
             </div>
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-5 lg:gap-6">
+          <div className="hidden md:flex items-center gap-3 lg:gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-xs font-semibold tracking-wide transition-colors duration-200 whitespace-nowrap ${
+                className={`font-mono text-[9px] lg:text-[10px] uppercase tracking-[0.1em] lg:tracking-[0.15em] transition-colors duration-200 whitespace-nowrap pb-1 border-b ${
                   pathname === link.href
-                    ? "text-brand-yellow"
-                    : "text-white hover:text-brand-yellow"
+                    ? "text-brand-maroon border-brand-maroon"
+                    : "text-brand-dark/80 border-transparent hover:text-brand-maroon"
                 }`}
               >
                 {link.label}
@@ -82,9 +79,10 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
+            className="md:hidden text-brand-dark p-2 hover:bg-brand-dark/5 transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -93,17 +91,17 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-brand-dark border-t border-brand-maroon/40">
+        <div className="md:hidden bg-paper border-t border-brand-dark/10">
           <div className="px-4 py-5 space-y-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={closeMobileMenu}
-                className={`block px-3 py-3 rounded-lg text-sm font-semibold transition-colors ${
+                className={`block px-3 py-3 font-mono text-xs uppercase tracking-[0.15em] transition-colors ${
                   pathname === link.href
-                    ? "text-brand-yellow bg-brand-maroon/30"
-                    : "text-white hover:text-brand-yellow hover:bg-white/5"
+                    ? "text-brand-maroon bg-brand-maroon/5 border-l-2 border-brand-maroon"
+                    : "text-brand-dark hover:text-brand-maroon hover:bg-brand-dark/5"
                 }`}
               >
                 {link.label}
@@ -112,9 +110,9 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={closeMobileMenu}
-              className="block mt-3 bg-brand-orange text-white px-4 py-3 rounded-full text-sm font-bold text-center hover:bg-brand-red transition-colors"
+              className="block mt-4 bg-brand-maroon text-white px-4 py-3.5 font-sans text-sm font-bold text-center hover:bg-brand-dark transition-colors"
             >
-              Book Now
+              Plan Your Journey
             </Link>
           </div>
         </div>

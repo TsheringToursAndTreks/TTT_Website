@@ -1,15 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Share2, Camera, MessageCircle, Phone, Mail } from "lucide-react";
+import { Share2, Camera, MessageCircle, Phone, Mail, MapPin } from "lucide-react";
+import PrayerFlags from "@/components/PrayerFlags";
 
 export default function Footer() {
   return (
     <footer className="bg-brand-dark text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <PrayerFlags className="text-brand-yellow" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-5">
               <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-white shadow-md">
                 <Image
                   src="/ttt_logo.jpeg"
@@ -20,53 +22,62 @@ export default function Footer() {
                 />
               </div>
               <div>
-                <h3 className="font-display font-bold text-brand-yellow text-sm leading-tight">
-                  Tshering Tours & Treks
+                <h3 className="font-display font-semibold text-brand-yellow text-sm leading-tight">
+                  Tshering Tours &amp; Treks
                 </h3>
-                <p className="text-gray-400 text-xs">
-                  Bhutan Travel Experts Est. 2005
+                <p className="font-mono text-gray-400 text-[9px] uppercase tracking-[0.2em] mt-1">
+                  Bhutan · Est. 2005
                 </p>
               </div>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed mb-5">
+            <p className="text-gray-400 text-sm leading-relaxed mb-6 font-sans">
               Your trusted gateway to the Kingdom of Bhutan. Crafting authentic
               Himalayan experiences since 2005.
             </p>
-            <div className="flex gap-3">
+            <div className="flex gap-3 mb-8">
               <a
-                href="#"
+                href="https://www.facebook.com/search/top?q=TTT%20Tshering%20Tours%20and%20Treks"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-gray-400 hover:text-brand-yellow hover:bg-white/20 transition-all"
+                className="w-9 h-9 border border-white/20 flex items-center justify-center text-gray-400 hover:text-brand-yellow hover:border-brand-yellow/50 transition-all"
               >
-                <Share2 size={16} />
+                <Share2 size={15} />
               </a>
               <a
                 href="#"
                 aria-label="Instagram"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-gray-400 hover:text-brand-yellow hover:bg-white/20 transition-all"
+                className="w-9 h-9 border border-white/20 flex items-center justify-center text-gray-400 hover:text-brand-yellow hover:border-brand-yellow/50 transition-all"
               >
-                <Camera size={16} />
+                <Camera size={15} />
               </a>
               <a
                 href="https://wa.me/97517115200"
                 aria-label="WhatsApp"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-gray-400 hover:text-green-400 hover:bg-white/20 transition-all"
+                className="w-9 h-9 border border-white/20 flex items-center justify-center text-gray-400 hover:text-green-400 hover:border-green-400/50 transition-all"
               >
-                <MessageCircle size={16} />
+                <MessageCircle size={15} />
               </a>
             </div>
+            <p className="font-tibetan text-brand-yellow/70 text-lg">
+              བཀྲ་ཤིས་བདེ་ལེགས།
+            </p>
+            <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-gray-500 mt-1">
+              Tashi Delek — good fortune to you
+            </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-sans font-bold text-brand-yellow mb-4 uppercase tracking-widest text-xs">
+            <h4 className="font-mono text-brand-yellow mb-6 uppercase tracking-[0.3em] text-[10px]">
               Quick Links
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {[
                 { label: "Home", href: "/" },
+                { label: "About Us", href: "/about" },
                 { label: "About Bhutan", href: "/about-bhutan" },
                 { label: "Activities", href: "/activities" },
                 { label: "Travel Information", href: "/travel-information" },
@@ -77,9 +88,11 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2 group font-sans"
+                    className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-3 group font-sans"
                   >
-                    <span className="w-1 h-1 rounded-full bg-brand-orange group-hover:w-2 transition-all" />
+                    <span className="text-brand-orange text-[8px] group-hover:text-brand-yellow transition-colors">
+                      ✦
+                    </span>
                     {item.label}
                   </Link>
                 </li>
@@ -89,11 +102,11 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-sans font-bold text-brand-yellow mb-4 uppercase tracking-widest text-xs">
+            <h4 className="font-mono text-brand-yellow mb-6 uppercase tracking-[0.3em] text-[10px]">
               Get In Touch
             </h4>
-            <ul className="space-y-3 text-sm text-gray-400 font-sans">
-              <li className="flex items-start gap-2">
+            <ul className="space-y-3.5 text-sm text-gray-400 font-sans">
+              <li className="flex items-start gap-3">
                 <Phone size={14} className="text-brand-orange mt-0.5 shrink-0" />
                 <div>
                   <a
@@ -106,7 +119,7 @@ export default function Footer() {
                   <span>+975 2 365044</span>
                 </div>
               </li>
-              <li className="flex items-start gap-2">
+              <li className="flex items-start gap-3">
                 <Mail size={14} className="text-brand-orange mt-0.5 shrink-0" />
                 <div>
                   <a
@@ -123,8 +136,8 @@ export default function Footer() {
                   </a>
                 </div>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-brand-orange mt-0.5 shrink-0">📍</span>
+              <li className="flex items-start gap-3">
+                <MapPin size={14} className="text-brand-orange mt-0.5 shrink-0" />
                 <span>
                   SD Building Above Nima High School,
                   <br />
@@ -136,7 +149,7 @@ export default function Footer() {
               href="https://wa.me/97517115200"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white text-sm font-semibold font-sans px-4 py-2.5 rounded-full transition-colors"
+              className="mt-6 inline-flex items-center gap-2 bg-green-700 hover:bg-green-600 text-white text-sm font-semibold font-sans px-5 py-3 transition-colors"
             >
               <MessageCircle size={15} />
               WhatsApp Us
@@ -146,10 +159,10 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-brand-maroon/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-gray-500 text-xs font-sans">
-          <p>© 2025 TTT Tshering Tours and Treks. All rights reserved.</p>
-          <p>Licensed by Tourism Council of Bhutan · ABTO Member</p>
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-gray-500 font-mono text-[10px] uppercase tracking-[0.15em]">
+          <p>© 2026 TTT Tshering Tours and Treks</p>
+          <p>Tourism Council of Bhutan · ABTO Member</p>
         </div>
       </div>
     </footer>

@@ -1,20 +1,37 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Lato } from "next/font/google";
+import {
+  Fraunces,
+  Work_Sans,
+  IBM_Plex_Mono,
+  Noto_Serif_Tibetan,
+} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
-const lato = Lato({
-  variable: "--font-lato",
+const workSans = Work_Sans({
+  variable: "--font-work-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "700", "900"],
+  display: "swap",
+});
+
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-plex-mono",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  display: "swap",
+});
+
+const notoTibetan = Noto_Serif_Tibetan({
+  variable: "--font-noto-tibetan",
+  subsets: ["tibetan"],
   display: "swap",
 });
 
@@ -32,7 +49,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
+    <html
+      lang="en"
+      className={`${fraunces.variable} ${workSans.variable} ${plexMono.variable} ${notoTibetan.variable}`}
+    >
       <body className="min-h-screen flex flex-col antialiased">
         <Navbar />
         <main className="flex-1">{children}</main>
