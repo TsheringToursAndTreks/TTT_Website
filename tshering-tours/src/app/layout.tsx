@@ -76,14 +76,14 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: "TTT Tshering Tours and Treks | Bhutan Travel Experts",
     description:
-      "Authentic Bhutan journeys crafted in Thimphu since 2005 — cultural tours, Himalayan treks, nature and cycling tours.",
+      "Authentic Bhutan journeys crafted in Thimphu since 2005: cultural tours, Himalayan treks, nature and cycling tours.",
     images: [{ url: OG_IMAGE, width: 1600, height: 1067, alt: "Paro Taktsang, the Tiger's Nest monastery, Bhutan" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "TTT Tshering Tours and Treks | Bhutan Travel Experts",
     description:
-      "Authentic Bhutan journeys crafted in Thimphu since 2005 — cultural tours, Himalayan treks, nature and cycling tours.",
+      "Authentic Bhutan journeys crafted in Thimphu since 2005: cultural tours, Himalayan treks, nature and cycling tours.",
     images: [OG_IMAGE],
   },
 };

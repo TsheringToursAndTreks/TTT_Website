@@ -54,7 +54,7 @@ const channels = [
   {
     name: "WhatsApp",
     handle: "+975 17115200",
-    desc: "Fastest way to reach us — chat directly with our Thimphu team, any time zone.",
+    desc: "Fastest way to reach us. Chat directly with our Thimphu team, any time zone.",
     href: WHATSAPP_URL,
     cta: "Chat on WhatsApp",
     icon: <WhatsAppIcon className="w-6 h-6" />,
@@ -120,7 +120,7 @@ const contactItems = [
       <p className="text-gray-600 font-sans text-sm leading-relaxed">
         SD Building Above Nima High School
         <br />
-        Thimphu, Bhutan — P.O. Box 767
+        Thimphu, Bhutan · P.O. Box 767
       </p>
     ),
   },
@@ -140,7 +140,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Get In Touch"
         title="Contact Us"
-        description="Reach us on the channel you prefer — our Thimphu team responds to every inquiry within 24 hours."
+        description="Reach us on the channel you prefer. Our Thimphu team responds to every inquiry within 24 hours."
       />
 
       {/* Main content */}
@@ -157,7 +157,7 @@ export default function ContactPage() {
                 <p className="text-gray-600 font-sans leading-relaxed mb-10 text-[15px]">
                   Planning a trip to Bhutan? Whether you have questions about
                   our activities, want a customised itinerary, or are ready to
-                  book — message us on Gmail, WhatsApp, or Facebook and our
+                  book, message us on Gmail, WhatsApp, or Facebook and our
                   Thimphu team will get back to you within 24 hours.
                 </p>
 
@@ -214,7 +214,7 @@ export default function ContactPage() {
                   Reach Out Directly
                 </h3>
                 <p className="text-gray-400 font-sans text-sm mb-7">
-                  No forms to fill — message us on the platform you already use.
+                  No forms to fill. Message us on the platform you already use.
                 </p>
                 <div className="space-y-5">
                   {channels.map((channel) => (
@@ -269,7 +269,7 @@ export default function ContactPage() {
               Based in Thimphu, Bhutan
             </h2>
             <p className="text-gray-600 font-sans leading-relaxed mb-6">
-              Our office is located in Thimphu — Bhutan&apos;s vibrant capital
+              Our office is located in Thimphu, Bhutan&apos;s vibrant capital
               and the heart of the kingdom. We organise journeys to all regions,
               from the westernmost valleys of Haa and Paro to the remote eastern
               frontier of Trashigang and Trashiyangtse.

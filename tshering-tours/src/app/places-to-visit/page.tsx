@@ -9,7 +9,7 @@ import PrayerFlags from "@/components/PrayerFlags";
 export const metadata: Metadata = {
   title: "Places to Visit | TTT Tshering Tours and Treks",
   description:
-    "Discover the best destinations across Bhutan — Thimphu, Paro, Punakha, Bumthang, Trongsa, and the remote eastern frontier.",
+    "Discover the best destinations across Bhutan: Thimphu, Paro, Punakha, Bumthang, Trongsa, and the remote eastern frontier.",
 };
 
 const regions = [
@@ -22,7 +22,7 @@ const regions = [
           "/img/buddha-dordenma.jpg",
         alt: "The great bronze Buddha Dordenma statue above Thimphu",
         description:
-          "Bhutan's vibrant capital — one of the world's few capitals without a traffic light. Visit the Memorial Chorten, National Textile Museum, Folk Heritage Museum, and the 51-metre Buddha Dordenma statue. The Tashichho Dzong houses the government and the monk body. The Weekend Market is a riot of local produce and handicrafts.",
+          "Bhutan's vibrant capital, one of the world's few capitals without a traffic light. Visit the Memorial Chorten, National Textile Museum, Folk Heritage Museum, and the 51-metre Buddha Dordenma statue. The Tashichho Dzong houses the government and the monk body. The Weekend Market is a riot of local produce and handicrafts.",
         highlights: ["Buddha Dordenma (51m statue)", "National Textile Museum", "Tashichho Dzong", "Weekend Market", "MICE & GNH conferences"],
       },
       {
@@ -31,7 +31,7 @@ const regions = [
           "/img/tigers-nest-cliff.jpg",
         alt: "The Tiger's Nest monastery on its cliff face above the Paro valley",
         description:
-          "Home to the iconic Tiger's Nest (Paro Taktsang) — arguably Asia's most dramatic monastery, perched on a sheer cliff 900m above the valley floor. The Paro Museum (Ta Dzong) houses an extraordinary collection of Bhutanese history and culture. The valley is also home to Bhutan's only international airport.",
+          "Home to the iconic Tiger's Nest (Paro Taktsang), arguably Asia's most dramatic monastery, perched on a sheer cliff 900m above the valley floor. The Paro Museum (Ta Dzong) houses an extraordinary collection of Bhutanese history and culture. The valley is also home to Bhutan's only international airport.",
         highlights: ["Tiger's Nest Monastery (Taktsang)", "Rinpung Dzong", "National Museum (Ta Dzong)", "Kyichu Lhakhang (7th century)", "Paro Tshechu festival"],
       },
       {
@@ -40,7 +40,7 @@ const regions = [
           "/img/punakha-dzong.jpg",
         alt: "Punakha Dzong at the confluence of the Mo Chu and Pho Chu rivers",
         description:
-          "The former winter capital of Bhutan, Punakha is dominated by its magnificent dzong — built at the confluence of the Mo Chu and Pho Chu rivers. Warmer and lower than Thimphu, the Punakha valley produces Bhutan's famous red rice. The annual Punakha Tshechu includes the re-enactment of a great 17th-century battle.",
+          "The former winter capital of Bhutan, Punakha is dominated by its magnificent dzong, built at the confluence of the Mo Chu and Pho Chu rivers. Warmer and lower than Thimphu, the Punakha valley produces Bhutan's famous red rice. The annual Punakha Tshechu includes the re-enactment of a great 17th-century battle.",
         highlights: ["Punakha Dzong (1637)", "Suspension bridge (180m, longest in Bhutan)", "Chimi Lhakhang fertility temple", "Punakha Tshechu festival", "Red rice farming valleys"],
       },
       {
@@ -57,7 +57,7 @@ const regions = [
           "/img/gangtey-goemba.jpg",
         alt: "Gangtey Goemba monastery above the Phobjikha valley",
         description:
-          "A strategic district commanding the pass between western and central Bhutan. The dzong — destroyed by fire in 2012 and currently being rebuilt — once dominated a rocky ridge above the Puna Tsang Chu. The surrounding farmland produces rice and maize, and traditional Rinchengang village is one of Bhutan's most photographed hamlets.",
+          "A strategic district commanding the pass between western and central Bhutan. The dzong, destroyed by fire in 2012 and currently being rebuilt, once dominated a rocky ridge above the Puna Tsang Chu. The surrounding farmland produces rice and maize, and traditional Rinchengang village is one of Bhutan's most photographed hamlets.",
         highlights: ["Wangdue Phodrang Dzong (rebuilding)", "Rinchengang village", "Gangtey valley nearby (black-necked cranes)", "Traditional agricultural landscape", "Gateway to central Bhutan"],
       },
       {
@@ -79,7 +79,7 @@ const regions = [
           "/img/jakar-dzong.jpg",
         alt: "Jakar Dzong in Bumthang, surrounded by trees",
         description:
-          "Bhutan's spiritual heartland — a cluster of four sacred valleys containing some of the country's oldest temples. Jambay Lhakhang was built in 659 AD by Tibetan Emperor Songtsen Gampo. Kurje Lhakhang contains the body print of Guru Rinpoche left in the 8th century. Tamshing Lhakhang (1501) was founded by treasure-discoverer Pema Lingpa.",
+          "Bhutan's spiritual heartland, a cluster of four sacred valleys containing some of the country's oldest temples. Jambay Lhakhang was built in 659 AD by Tibetan Emperor Songtsen Gampo. Kurje Lhakhang contains the body print of Guru Rinpoche left in the 8th century. Tamshing Lhakhang (1501) was founded by treasure-discoverer Pema Lingpa.",
         highlights: ["Jambay Lhakhang (659 AD)", "Kurje Lhakhang (Guru Rinpoche body print)", "Tamshing Lhakhang (1501)", "Mebar Tsho – the Burning Lake", "Bumthang Brewery (Red Panda beer)"],
       },
       {
@@ -87,7 +87,7 @@ const regions = [
         image: "/trongsa.jpg",
         alt: "Trongsa Dzong sprawling along its ridge above the gorge",
         description:
-          "The ancestral seat of Bhutan's royal Wangchuck dynasty. Trongsa Dzong — Bhutan's largest — commands the sole east-west road through a dramatic gorge. The Tower of Trongsa Museum, in the ancient watchtower above the dzong, tells the fascinating story of how the Trongsa Penlop (governor) united Bhutan under one crown.",
+          "The ancestral seat of Bhutan's royal Wangchuck dynasty. Trongsa Dzong, Bhutan's largest, commands the sole east-west road through a dramatic gorge. The Tower of Trongsa Museum, in the ancient watchtower above the dzong, tells the fascinating story of how the Trongsa Penlop (governor) united Bhutan under one crown.",
         highlights: ["Trongsa Dzong (Bhutan's largest)", "Tower of Trongsa Museum", "Wangchuck dynasty history", "Dramatic gorge views", "Gateway to eastern Bhutan"],
       },
       {
@@ -116,7 +116,7 @@ const regions = [
         image: "/trashiyangtse.jpg",
         alt: "The white Chhorten Kora stupa with its golden spire",
         description:
-          "The northernmost district of eastern Bhutan, home to the sacred Chhorten Kora — a replica of the great Boudhanath stupa of Nepal. The annual Chhorten Kora festival draws pilgrims from across Arunachal Pradesh (India) and Bhutan. The district is known for its distinctive woodturning craft.",
+          "The northernmost district of eastern Bhutan, home to the sacred Chhorten Kora, a replica of the great Boudhanath stupa of Nepal. The annual Chhorten Kora festival draws pilgrims from across Arunachal Pradesh (India) and Bhutan. The district is known for its distinctive woodturning craft.",
         highlights: ["Chhorten Kora (stupa)", "Annual Chhorten Kora festival", "Traditional woodturning crafts", "Gom Kora pilgrimage", "Remote riverside location"],
       },
       {
@@ -124,7 +124,7 @@ const regions = [
         image: "/mongar.jpg",
         alt: "The hillside town of Mongar in golden light",
         description:
-          "The scenic mountain town of Mongar serves as the hub of the east and a staging post for journeys deeper into the region. Built along a ridge rather than on a valley floor — unusual for Bhutan — it offers sweeping views, a relaxed pace, and a genuine sense of frontier life.",
+          "The scenic mountain town of Mongar serves as the hub of the east and a staging post for journeys deeper into the region. Built along a ridge rather than on a valley floor, unusual for Bhutan, it offers sweeping views, a relaxed pace, and a genuine sense of frontier life.",
         highlights: ["Mongar Dzong", "Hub of eastern Bhutan", "Ridge-top town views", "Remote Himalayan scenery", "Staging post for the far east"],
       },
       {
@@ -132,7 +132,7 @@ const regions = [
         image: "/lhuentse.jpg",
         alt: "Lhuentse Dzong rising from its forested cliff above the valley",
         description:
-          "The ancestral home of Bhutan's royal family — a wild, remote district accessible only by rough mountain roads. Lhuentse Dzong rises dramatically from a cliff above the Kuri Chhu river, and the village of Khoma is famed for weaving Kishuthara, Bhutan's most intricate silk textile.",
+          "The ancestral home of Bhutan's royal family, a wild, remote district accessible only by rough mountain roads. Lhuentse Dzong rises dramatically from a cliff above the Kuri Chhu river, and the village of Khoma is famed for weaving Kishuthara, Bhutan's most intricate silk textile.",
         highlights: ["Lhuentse Dzong", "Ancestral royal homeland", "Khoma weaving village (Kishuthara)", "Kuri Chhu river valley", "Genuine off-the-beaten-path travel"],
       },
     ],
@@ -146,7 +146,7 @@ export default function PlacesToVisitPage() {
       <PageHero
         eyebrow="Discover the Kingdom"
         title="Places to Visit"
-        description="From Paro's Tiger's Nest to the remote eastern frontier of Trashigang — Bhutan unfolds across three distinct regions."
+        description="From Paro's Tiger's Nest to the remote eastern frontier of Trashigang, Bhutan unfolds across three distinct regions."
       />
 
       {/* Intro */}
@@ -154,8 +154,8 @@ export default function PlacesToVisitPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
             <p className="text-gray-600 font-sans text-lg leading-relaxed max-w-3xl">
-              Bhutan is divided into three broad regions — Western, Central, and
-              Eastern — each with its own distinct character, landscapes, and
+              Bhutan is divided into three broad regions: Western, Central, and
+              Eastern, each with its own distinct character, landscapes, and
               culture. A standard trip covers the west; a longer journey reveals
               the untouched east.
             </p>
@@ -240,7 +240,7 @@ export default function PlacesToVisitPage() {
             </h2>
             <p className="text-gray-300 font-sans text-lg mb-8 max-w-xl">
               Tell us your interests and we&apos;ll design a route through
-              Bhutan&apos;s most remarkable places — just for you.
+              Bhutan&apos;s most remarkable places, just for you.
             </p>
             <Link
               href="/contact"

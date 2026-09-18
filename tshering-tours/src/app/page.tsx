@@ -47,14 +47,14 @@ const testimonials = [
     country: "United States",
     rating: 5,
     quote:
-      "TTT Tshering Tours crafted the most magical journey of my life. Every detail was perfect — from the monastery visits to the family dinners. Bhutan truly changed my perspective on happiness.",
+      "TTT Tshering Tours crafted the most magical journey of my life. Every detail was perfect, from the monastery visits to the family dinners. Bhutan truly changed my perspective on happiness.",
   },
   {
     name: "Thomas Mueller",
     country: "Germany",
     rating: 5,
     quote:
-      "Our guide was extraordinary — knowledgeable, warm, and passionate about sharing his country. The Tiger's Nest trek was unforgettable. We will absolutely return.",
+      "Our guide was extraordinary: knowledgeable, warm, and passionate about sharing his country. The Tiger's Nest trek was unforgettable. We will absolutely return.",
   },
   {
     name: "Yuki Tanaka",
@@ -68,7 +68,7 @@ const testimonials = [
 const whyBhutan = [
   {
     title: "Gross National Happiness",
-    desc: "Bhutan measures prosperity not in GDP but in the happiness and well-being of its people — a philosophy you'll feel in every single interaction.",
+    desc: "Bhutan measures prosperity not in GDP but in the happiness and well-being of its people, a philosophy you'll feel in every single interaction.",
   },
   {
     title: "Pristine Himalayan Nature",
@@ -84,22 +84,22 @@ const experiences = [
   {
     title: "Cultural Tours",
     duration: "7 nights – 1 month",
-    desc: "Sacred dzongs, village ceremonies, Tshechu festivals, and Tiger's Nest — guided by Bhutanese experts who have spent their lives in these valleys.",
+    desc: "Sacred dzongs, village ceremonies, Tshechu festivals, and Tiger's Nest, all guided by Bhutanese experts who have spent their lives in these valleys.",
   },
   {
     title: "Trekking",
     duration: "2 – 25 days",
-    desc: "From gentle Haa valley walks to the legendary Snowman Trek crossing 11 passes above 4,500m — fully supported with guides, cooks, and pack animals.",
+    desc: "From gentle Haa valley walks to the legendary Snowman Trek crossing 11 passes above 4,500m, fully supported with guides, cooks, and pack animals.",
   },
   {
     title: "Nature Tours",
     duration: "5 – 14 days",
-    desc: "600+ bird species, rare orchids, snow leopards, and red pandas — a world-class biodiversity hotspot explored with expert naturalist guides.",
+    desc: "600+ bird species, rare orchids, snow leopards, and red pandas: a world-class biodiversity hotspot explored with expert naturalist guides.",
   },
   {
     title: "Cycling Tours",
     duration: "10 – 15 days",
-    desc: "Pedal from the ancient Paro valley through Thimphu, Punakha, and Gangtey to Bumthang — support vehicle carries your luggage throughout.",
+    desc: "Pedal from the ancient Paro valley through Thimphu, Punakha, and Gangtey to Bumthang, with a support vehicle carrying your luggage throughout.",
   },
 ];
 
@@ -167,7 +167,7 @@ export default function HomePage() {
               genuine cultural heritage is a priceless jewel.
             </blockquote>
             <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-gray-500">
-              — On the kingdom&apos;s living heritage
+              On the kingdom&apos;s living heritage
             </p>
           </FadeUp>
         </div>
@@ -228,18 +228,18 @@ export default function HomePage() {
                 <p className="text-gray-600 font-sans leading-relaxed mb-5 text-[17px] first-letter:font-display first-letter:text-6xl first-letter:font-semibold first-letter:text-brand-maroon first-letter:float-left first-letter:mr-3 first-letter:leading-[0.85]">
                   TTT Tshering Tours &amp; Treks was established in 2005 in
                   Thimphu, with the guidance of the Late Dr. Martin Uitz of
-                  Austria — the architect of Bhutan&apos;s Tourism Master Plan.
+                  Austria, the architect of Bhutan&apos;s Tourism Master Plan.
                   For over twenty years we have connected travelers from around
                   the world with Bhutan&apos;s extraordinary culture,
                   landscapes, and people.
                 </p>
                 <p className="text-gray-600 font-sans leading-relaxed mb-8 text-[17px]">
-                  Every journey we craft is personal — tailored to your dates,
+                  Every journey we craft is personal, tailored to your dates,
                   interests, and pace, in every season, across the whole
                   kingdom.
                 </p>
                 <p className="font-display italic text-xl text-brand-dark mb-10">
-                  — Tshering Wangdi, Founder &amp; Owner
+                  Tshering Wangdi, Founder &amp; Owner
                 </p>
                 <ul className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray-600 space-y-2 mb-10">
                   {[
@@ -335,7 +335,7 @@ export default function HomePage() {
               Come see the kingdom for yourself.
             </h2>
             <p className="text-gray-300 text-lg mb-12 font-sans max-w-xl leading-relaxed">
-              Tell us your dates and interests — we&apos;ll craft an itinerary
+              Tell us your dates and interests and we&apos;ll craft an itinerary
               that is yours alone, in any season.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -358,7 +358,7 @@ export default function HomePage() {
             <p className="font-tibetan text-brand-yellow/60 text-lg mt-14">
               བཀྲ་ཤིས་བདེ་ལེགས།{" "}
               <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-gray-400 ml-3 align-middle">
-                Tashi Delek — good fortune on your journey
+                Tashi Delek · good fortune on your journey
               </span>
             </p>
           </FadeUp>

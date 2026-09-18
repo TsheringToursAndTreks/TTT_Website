@@ -67,7 +67,7 @@ export default function Footer() {
               བཀྲ་ཤིས་བདེ་ལེགས།
             </p>
             <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-gray-500 mt-1">
-              Tashi Delek — good fortune to you
+              Tashi Delek · good fortune to you
             </p>
           </div>
 
@@ -143,7 +143,7 @@ export default function Footer() {
                 <span>
                   SD Building Above Nima High School,
                   <br />
-                  Thimphu, Bhutan — P.O. Box 767
+                  Thimphu, Bhutan · P.O. Box 767
                 </span>
               </li>
             </ul>

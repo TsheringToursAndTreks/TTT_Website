@@ -7,7 +7,7 @@ import PageHero from "@/components/PageHero";
 export const metadata: Metadata = {
   title: "Travel Information | TTT Tshering Tours and Treks",
   description:
-    "Everything you need to know before visiting Bhutan — visa requirements, flights, entry process, sustainable development fee, packing tips, and more.",
+    "Everything you need to know before visiting Bhutan: visa requirements, flights, entry process, sustainable development fee, packing tips, and more.",
 };
 
 const festivals2025 = [
@@ -34,7 +34,7 @@ const entryCards = [
       <>
         <p className="text-gray-600 font-sans text-sm leading-relaxed mb-3">
           Tourist visas are processed online through a licensed Bhutanese tour
-          operator — that&apos;s us. Once your travel dates are confirmed, TTT
+          operator, and that&apos;s us. Once your travel dates are confirmed, TTT
           Tshering Tours &amp; Treks handles all formalities, including your
           visa clearance, which must be approved before departure. A one-time,
           non-refundable visa fee of{" "}
@@ -63,7 +63,7 @@ const entryCards = [
       <>
         <p className="text-gray-600 font-sans text-sm leading-relaxed mb-4">
           The most common method of entering Bhutan is by air into Paro
-          International Airport — one of the world&apos;s most dramatic
+          International Airport, one of the world&apos;s most dramatic
           landings, surrounded by Himalayan peaks. Two airlines operate
           international routes into Paro:
         </p>
@@ -71,7 +71,7 @@ const entryCards = [
           <li className="flex gap-2.5">
             <span className="text-brand-orange font-bold shrink-0 mt-0.5">→</span>
             <span>
-              <strong className="text-brand-dark">Druk Air</strong> —
+              <strong className="text-brand-dark">Druk Air</strong>,
               Bhutan&apos;s national carrier. Note: Druk Air flights may be
               delayed during the monsoon (July–August). Allow a 24-hour buffer
               before onward connections.
@@ -80,7 +80,7 @@ const entryCards = [
           <li className="flex gap-2.5">
             <span className="text-brand-orange font-bold shrink-0 mt-0.5">→</span>
             <span>
-              <strong className="text-brand-dark">Bhutan Airlines</strong> —
+              <strong className="text-brand-dark">Bhutan Airlines</strong>,
               Private airline with routes from major regional hubs.
             </span>
           </li>
@@ -106,8 +106,8 @@ const entryCards = [
           healthcare, education, and environmental programmes.
         </p>
         <p className="text-gray-600 font-sans text-sm leading-relaxed">
-          From January 1, 2026, a 5% GST applies to tourism services in Bhutan
-          — the SDF and visa fee are exempt and unchanged. Both are handled
+          From January 1, 2026, a 5% GST applies to tourism services in Bhutan,
+          though the SDF and visa fee are exempt and unchanged. Both are handled
           within your tour package: the price we quote is what you pay.
         </p>
       </>
@@ -120,10 +120,10 @@ const entryCards = [
     content: (
       <ul className="space-y-2.5 text-sm font-sans text-gray-600">
         {[
-          "Bhutan has no tobacco sales — it is illegal to buy or sell tobacco products anywhere in the country.",
+          "Bhutan has no tobacco sales: it is illegal to buy or sell tobacco products anywhere in the country.",
           "Dress modestly when visiting dzongs and temples; traditional dress (gho/kira) is required in official buildings.",
           "The Bhutanese currency is the Ngultrum (BTN), pegged 1:1 to the Indian Rupee.",
-          "Most ATMs are in Thimphu and Paro — carry sufficient cash for rural areas.",
+          "Most ATMs are in Thimphu and Paro, so carry sufficient cash for rural areas.",
           "Altitude sickness can affect visitors above 3,500m; acclimatise gradually.",
           "Mobile connectivity (Bhutan Telecom / TashiCell) covers most valleys but not all trekking routes.",
         ].map((tip, i) => (
@@ -203,7 +203,7 @@ export default function TravelInformationPage() {
               <p className="text-gray-500 font-sans text-sm mt-4 max-w-xl mx-auto">
                 Tshechu festivals are among the world&apos;s most extraordinary
                 cultural spectacles. Timing your visit with one is highly
-                recommended — contact us for exact dates for your travel year.
+                recommended. Contact us for exact dates for your travel year.
               </p>
             </div>
           </FadeUp>
@@ -236,7 +236,7 @@ export default function TravelInformationPage() {
             </h2>
             <p className="text-gray-300 font-sans mb-6">
               Our team in Thimphu will answer every question about entry,
-              health, packing, and timing — within 24 hours.
+              health, packing, and timing, all within 24 hours.
             </p>
             <Link
               href="/contact"

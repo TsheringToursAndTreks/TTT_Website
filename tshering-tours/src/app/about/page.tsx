@@ -19,7 +19,7 @@ const values = [
   },
   {
     title: "Personalized Service",
-    desc: "Every traveler is unique. We design bespoke itineraries tailored to your interests, fitness level, and budget — from luxury lodges to authentic cultural homestays.",
+    desc: "Every traveler is unique. We design bespoke itineraries tailored to your interests, fitness level, and budget, from luxury lodges to authentic cultural homestays.",
   },
   {
     title: "Sustainable Tourism",
@@ -27,7 +27,7 @@ const values = [
   },
   {
     title: "Global Partnerships",
-    desc: "Trusted by leading international travel agencies across Europe and beyond — bringing Bhutan to travelers from four continents.",
+    desc: "Trusted by leading international travel agencies across Europe and beyond, bringing Bhutan to travelers from four continents.",
   },
 ];
 
@@ -42,13 +42,13 @@ const team = [
     initials: "རི",
     name: "Our Trekking Guides",
     role: "Certified Mountain Guides",
-    bio: "Our treks are led by certified Bhutanese mountain guides with deep experience of the kingdom's trails — from gentle valley walks to the high passes of the Chomolhari and Snowman routes — supported by cooks and horsemen from the villages along the way.",
+    bio: "Our treks are led by certified Bhutanese mountain guides with deep experience of the kingdom's trails, from gentle valley walks to the high passes of the Chomolhari and Snowman routes, supported by cooks and horsemen from the villages along the way.",
   },
   {
     initials: "ལམ",
     name: "Our Cultural Guides",
     role: "Licensed by the Tourism Council",
-    bio: "Every cultural journey is accompanied by a licensed Bhutanese guide — storytellers who bring the kingdom's history, Buddhist art, festivals, and living traditions vividly to life in fluent English.",
+    bio: "Every cultural journey is accompanied by a licensed Bhutanese guide, a storyteller who brings the kingdom's history, Buddhist art, festivals, and living traditions vividly to life in fluent English.",
   },
 ];
 
@@ -120,16 +120,16 @@ export default function AboutPage() {
                 <p className="text-gray-600 font-sans leading-relaxed mb-5 text-[17px]">
                   Based in Thimphu, the heart of Bhutan, we specialise in
                   creating authentic, immersive travel experiences across all
-                  regions of the kingdom — from the western valleys of Paro and
+                  regions of the kingdom, from the western valleys of Paro and
                   Punakha to the remote eastern districts of Trashigang and
                   Trashiyangtse.
                 </p>
                 <p className="text-gray-600 font-sans leading-relaxed mb-8 text-[17px]">
-                  Every journey we craft is a personal story — shaped by your
+                  Every journey we craft is a personal story, shaped by your
                   interests, your pace, and your desire to truly know Bhutan.
                 </p>
                 <p className="font-display italic text-xl text-brand-dark mb-10">
-                  — Tshering Wangdi, Founder &amp; Owner
+                  Tshering Wangdi, Founder &amp; Owner
                 </p>
                 <ul className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray-600 space-y-2">
                   {[
@@ -169,7 +169,7 @@ export default function AboutPage() {
                 </div>
                 <figcaption className="flex items-baseline justify-between mt-4 font-mono text-[10px] uppercase tracking-[0.2em] text-gray-500">
                   <span>Buddha Dordenma</span>
-                  <span>Thimphu — our home</span>
+                  <span>Thimphu · our home</span>
                 </figcaption>
               </figure>
             </FadeUp>

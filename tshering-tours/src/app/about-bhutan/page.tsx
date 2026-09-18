@@ -9,7 +9,7 @@ import PrayerFlags from "@/components/PrayerFlags";
 export const metadata: Metadata = {
   title: "About Bhutan | TTT Tshering Tours and Treks",
   description:
-    "Learn about the Kingdom of Bhutan — its Gross National Happiness philosophy, Buddhist culture, pristine nature, people, food, and traditions.",
+    "Learn about the Kingdom of Bhutan: its Gross National Happiness philosophy, Buddhist culture, pristine nature, people, food, and traditions.",
 };
 
 const sections = [
@@ -19,7 +19,7 @@ const sections = [
     image: "/img/river-valley.jpg",
     alt: "A river running through a forested Himalayan valley in Bhutan",
     content:
-      "The Kingdom of Bhutan is a small, landlocked country nestled in the eastern Himalayas between India and China. Despite its modest size, Bhutan encompasses an extraordinary range of ecosystems — from subtropical plains in the south rising to glacial peaks above 7,000 metres in the north. More than 60% of the country is covered by forest, with a constitutional requirement that this figure never fall below that threshold.",
+      "The Kingdom of Bhutan is a small, landlocked country nestled in the eastern Himalayas between India and China. Despite its modest size, Bhutan encompasses an extraordinary range of ecosystems, from subtropical plains in the south rising to glacial peaks above 7,000 metres in the north. More than 60% of the country is covered by forest, with a constitutional requirement that this figure never fall below that threshold.",
   },
   {
     title: "Religion",
@@ -27,7 +27,7 @@ const sections = [
     image: "/img/monk-dzong.jpg",
     alt: "A Buddhist monk in red robes walking through a dzong hallway",
     content:
-      "Mahayana Buddhism is deeply rooted in every aspect of Bhutanese life. Introduced in the 8th century by Guru Rinpoche (Padmasambhava), it influences architecture, governance, festivals, and daily existence. Dzongs — fortress-monasteries — serve as both administrative and religious centres in every district. Prayer flags flutter from mountain passes, and the sound of monks chanting is as common as birdsong.",
+      "Mahayana Buddhism is deeply rooted in every aspect of Bhutanese life. Introduced in the 8th century by Guru Rinpoche (Padmasambhava), it influences architecture, governance, festivals, and daily existence. Dzongs, the fortress-monasteries, serve as both administrative and religious centres in every district. Prayer flags flutter from mountain passes, and the sound of monks chanting is as common as birdsong.",
   },
   {
     title: "Culture & Traditions",
@@ -35,7 +35,7 @@ const sections = [
     image: "/img/tshechu-dance.jpg",
     alt: "Bhutanese dancers in traditional costume performing at a tshechu festival",
     content:
-      "Bhutan has consciously chosen to preserve its cultural heritage in the face of globalisation. Traditional dress — the gho for men and kira for women — is mandatory in government buildings and dzongs. The government carefully manages foreign cultural influence, and traditional arts (the Zorig Chusum — 13 traditional crafts) are taught in dedicated schools. Bhutan's annual tsechu festivals are living religious theatre, performed by monks in elaborate masks and costumes.",
+      "Bhutan has consciously chosen to preserve its cultural heritage in the face of globalisation. Traditional dress, the gho for men and kira for women, is mandatory in government buildings and dzongs. The government carefully manages foreign cultural influence, and traditional arts (the Zorig Chusum, 13 traditional crafts) are taught in dedicated schools. Bhutan's annual tsechu festivals are living religious theatre, performed by monks in elaborate masks and costumes.",
   },
   {
     title: "People & Society",
@@ -43,15 +43,15 @@ const sections = [
     image: "/img/punakha-farmer.jpg",
     alt: "A Bhutanese woman in a traditional straw hat in the Punakha valley",
     content:
-      "Bhutan is a relatively egalitarian society where women enjoy equal rights with men in every respect. There is no rigid caste system; social mobility is possible regardless of origin. The Bhutanese people are renowned across the world for their warmth, hospitality, and genuine contentment. Bhutan has no significant crime, no pollution crisis, and no homeless population — qualities that flow directly from the country's values and governance philosophy.",
+      "Bhutan is a relatively egalitarian society where women enjoy equal rights with men in every respect. There is no rigid caste system; social mobility is possible regardless of origin. The Bhutanese people are renowned across the world for their warmth, hospitality, and genuine contentment. Bhutan has no significant crime, no pollution crisis, and no homeless population, qualities that flow directly from the country's values and governance philosophy.",
   },
   {
     title: "Food & Cuisine",
-    caption: "Chillies drying in the sun — a vegetable, not a spice",
+    caption: "Chillies drying in the sun · a vegetable, not a spice",
     image: "/img/chillies.jpg",
     alt: "Bunches of dried red chillies hanging outdoors in Bhutan",
     content:
-      "A traditional Bhutanese meal centres on red rice and chillies. The national dish is Ema Datshi — chillies cooked in a sauce of local cheese — where chillies function as a vegetable rather than a seasoning. Buckwheat pancakes, yak meat, and fresh river fish are common in rural areas. An important note for visitors: it is illegal in Bhutan to sell or buy tobacco products, and smoking in public places is strictly banned.",
+      "A traditional Bhutanese meal centres on red rice and chillies. The national dish is Ema Datshi, chillies cooked in a sauce of local cheese, where chillies function as a vegetable rather than a seasoning. Buckwheat pancakes, yak meat, and fresh river fish are common in rural areas. An important note for visitors: it is illegal in Bhutan to sell or buy tobacco products, and smoking in public places is strictly banned.",
   },
   {
     title: "Gross National Happiness",
@@ -59,7 +59,7 @@ const sections = [
     image: "/img/prayer-flags-chelela.jpg",
     alt: "Colourful prayer flags strung across a Himalayan mountain pass",
     content:
-      "Bhutan's Fourth King, His Majesty Jigme Singye Wangchuck, famously declared that 'Gross National Happiness is more important than Gross National Product.' This philosophy — now enshrined in Bhutan's constitution — measures national progress across four pillars: sustainable socioeconomic development, environmental conservation, preservation of culture, and good governance. It is not a vague aspiration; GNH shapes every major policy decision the government makes.",
+      "Bhutan's Fourth King, His Majesty Jigme Singye Wangchuck, famously declared that 'Gross National Happiness is more important than Gross National Product.' This philosophy, now enshrined in Bhutan's constitution, measures national progress across four pillars: sustainable socioeconomic development, environmental conservation, preservation of culture, and good governance. It is not a vague aspiration; GNH shapes every major policy decision the government makes.",
   },
   {
     title: "Environment & Conservation",
@@ -67,7 +67,7 @@ const sections = [
     image: "/img/forest-pond.jpg",
     alt: "A still pond in the middle of a pristine Bhutanese forest",
     content:
-      "Bhutan is the world's only carbon-negative country — it absorbs more carbon dioxide than it produces. With over 70% forest cover, numerous protected areas covering more than half the country, and a constitutional environmental mandate, Bhutan is a global leader in conservation. The country is home to snow leopards, Bengal tigers, red pandas, one-horned rhinoceroses, golden langurs, and over 600 species of birds.",
+      "Bhutan is the world's only carbon-negative country: it absorbs more carbon dioxide than it produces. With over 70% forest cover, numerous protected areas covering more than half the country, and a constitutional environmental mandate, Bhutan is a global leader in conservation. The country is home to snow leopards, Bengal tigers, red pandas, one-horned rhinoceroses, golden langurs, and over 600 species of birds.",
   },
 ];
 
@@ -118,7 +118,7 @@ export default function AboutBhutanPage() {
         description="A tiny Himalayan kingdom that measures prosperity in happiness, not economic output."
       />
 
-      {/* Intro — quote beside the Tiger's Nest */}
+      {/* Intro: quote beside the Tiger's Nest */}
       <section className="py-20 lg:py-24 bg-paper overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -140,7 +140,7 @@ export default function AboutBhutanPage() {
                   Himalayan kingdom that has chosen to measure its success not
                   in economic output but in the happiness of its people, the
                   health of its forests, and the vitality of its ancient
-                  culture. Visiting Bhutan is not merely a holiday — it is a
+                  culture. Visiting Bhutan is not merely a holiday. It is a
                   transformation.
                 </p>
               </div>
@@ -169,7 +169,7 @@ export default function AboutBhutanPage() {
                   />
                 </div>
                 <figcaption className="flex items-baseline justify-between mt-4 font-mono text-[10px] uppercase tracking-[0.2em] text-gray-500">
-                  <span>Taktsang — the Tiger&apos;s Nest</span>
+                  <span>Taktsang · the Tiger&apos;s Nest</span>
                   <span>Paro Valley</span>
                 </figcaption>
               </figure>
@@ -178,7 +178,7 @@ export default function AboutBhutanPage() {
         </div>
       </section>
 
-      {/* Sections — alternating editorial rows */}
+      {/* Sections: alternating editorial rows */}
       <section className="py-20 lg:py-24 bg-paper border-t border-brand-dark/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>

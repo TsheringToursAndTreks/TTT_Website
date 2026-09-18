@@ -20,7 +20,7 @@ const activities = [
     alt: "Masked dancers performing at a tshechu festival in Bhutan",
     caption: "Masked dance at a tshechu festival",
     description:
-      "Our cultural tours introduce visitors to the unique aspects of Bhutanese life through visits to villages, temples, historical monuments, pilgrimage sites, and scenic spots. A standard cultural trip of 10–15 days covers the western and central regions — Paro, Punakha, Haa, Thimphu, Wangdue, Trongsa, and Bumthang. Eastern Bhutan — Trashigang and Trashiyangtse — can be added for a deeper, more remote experience.",
+      "Our cultural tours introduce visitors to the unique aspects of Bhutanese life through visits to villages, temples, historical monuments, pilgrimage sites, and scenic spots. A standard cultural trip of 10–15 days covers the western and central regions: Paro, Punakha, Haa, Thimphu, Wangdue, Trongsa, and Bumthang. Eastern Bhutan, including Trashigang and Trashiyangtse, can be added for a deeper, more remote experience.",
     highlights: [
       "Annual Tshechu festivals with sacred mask dances",
       "Tiger's Nest (Paro Taktsang) monastery hike",
@@ -37,12 +37,12 @@ const activities = [
     alt: "A trekker crossing a prayer-flag-draped suspension bridge in Bhutan",
     caption: "A suspension bridge on the trail",
     description:
-      "Bhutan offers trekking of incredible beauty across clean air, unspoiled, and uncrowded trails. Your private guide and pack animals carry equipment; an experienced cook prepares nutritious meals each evening. Treks range from gentle valley walks to the legendary Snowman Trek — one of the most challenging routes on Earth, crossing 11 passes above 4,500 metres.",
+      "Bhutan offers trekking of incredible beauty across clean air, unspoiled, and uncrowded trails. Your private guide and pack animals carry equipment; an experienced cook prepares nutritious meals each evening. Treks range from gentle valley walks to the legendary Snowman Trek, one of the most challenging routes on Earth, crossing 11 passes above 4,500 metres.",
     highlights: [
       "2-night trek around the Haa valley",
       "3-day walk from Thimphu to Paro",
       "8-day trek to Chomolhari Base Camp (7,326m views)",
-      "Snowman Trek — 25 days across Lunana wilderness",
+      "Snowman Trek · 25 days across Lunana wilderness",
       "Fully supported: guide, cook, pack horses",
     ],
     season: "March–May, September–November",
@@ -54,12 +54,12 @@ const activities = [
     alt: "Forested green mountains under white clouds in Bhutan",
     caption: "Forested ridges under monsoon cloud",
     description:
-      "Bhutan is one of the world's great biodiversity hotspots. With over 5,500 plant species (including 300 medicinal plants, 50+ rhododendron species, and 600+ orchid species) and more than 600 bird species, it is an ornithological paradise. Our nature tours take you through Bhutan's diverse ecosystems — from subtropical riverine forests to high alpine meadows — with expert naturalist guides.",
+      "Bhutan is one of the world's great biodiversity hotspots. With over 5,500 plant species (including 300 medicinal plants, 50+ rhododendron species, and 600+ orchid species) and more than 600 bird species, it is an ornithological paradise. Our nature tours take you through Bhutan's diverse ecosystems, from subtropical riverine forests to high alpine meadows, with expert naturalist guides.",
     highlights: [
-      "600+ bird species — a world-class birding destination",
+      "600+ bird species · a world-class birding destination",
       "Snow leopards, red pandas, and golden langurs",
       "50+ rhododendron species in bloom (April–May)",
-      "Thrumshingla National Park — temperate cloud forest",
+      "Thrumshingla National Park · temperate cloud forest",
       "Botanical walks with expert naturalist guide",
     ],
     season: "April–June for flowers; October–November for birds",
@@ -71,13 +71,13 @@ const activities = [
     alt: "A winding mountain road through green hills strung with prayer flags",
     caption: "Mountain roads between the valleys",
     description:
-      "Cycle through one of the world's most unspoiled kingdoms, from the ancient Paro valley to the spiritual heartland of Bumthang. A support vehicle accompanies the group throughout, carrying luggage and providing assistance on steep mountain passes. The route winds through Thimphu, Punakha, Gangtey's black-necked crane valley, and Jakar — offering a constantly changing landscape of monasteries, forests, and rice terraces.",
+      "Cycle through one of the world's most unspoiled kingdoms, from the ancient Paro valley to the spiritual heartland of Bumthang. A support vehicle accompanies the group throughout, carrying luggage and providing assistance on steep mountain passes. The route winds through Thimphu, Punakha, Gangtey's black-necked crane valley, and Jakar, offering a constantly changing landscape of monasteries, forests, and rice terraces.",
     highlights: [
       "Paro to Bumthang cycling route",
       "Stops in Thimphu, Punakha, Gangtey, and Jakar",
       "Ancient suspension bridges and forest trails",
       "Support vehicle throughout for luggage and assistance",
-      "Mixed terrain — downhill descents and scenic passes",
+      "Mixed terrain · downhill descents and scenic passes",
     ],
     season: "October–November, March–April",
   },
@@ -90,10 +90,10 @@ export default function ActivitiesPage() {
       <PageHero
         eyebrow="Explore the Kingdom"
         title="Activities"
-        description="Cultural immersions, Himalayan treks, nature expeditions, and cycling journeys — crafted for every type of traveler."
+        description="Cultural immersions, Himalayan treks, nature expeditions, and cycling journeys, crafted for every type of traveler."
       />
 
-      {/* Activities — alternating editorial rows */}
+      {/* Activities: alternating editorial rows */}
       <section className="py-20 lg:py-24 bg-paper">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-20 lg:space-y-28">

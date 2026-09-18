@@ -13,14 +13,14 @@ export default function NotFound() {
       </span>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
         <p className="font-mono text-brand-yellow uppercase tracking-[0.3em] text-[11px] mb-6">
-          ✦ 404 — Off the map
+          ✦ 404 · Off the map
         </p>
         <h1 className="font-display text-5xl md:text-7xl font-semibold tracking-tight mb-6 max-w-3xl">
           This trail doesn&apos;t lead anywhere.
         </h1>
         <p className="text-gray-300 font-sans text-lg max-w-xl leading-relaxed mb-10">
           Even in Bhutan, some paths end at a cliff edge. The page you&apos;re
-          looking for doesn&apos;t exist — but the kingdom is just a step away.
+          looking for doesn&apos;t exist, but the kingdom is just a step away.
         </p>
         <div className="flex flex-wrap gap-6 items-center">
           <Link

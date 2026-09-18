@@ -8,7 +8,7 @@ import PrayerFlags from "@/components/PrayerFlags";
 export const metadata: Metadata = {
   title: "Hotels & Accommodation | TTT Tshering Tours and Treks",
   description:
-    "Discover Bhutan's finest hotels, resorts, and farm-stays — from luxury Amankora and Taj Tashi to authentic village homestays arranged by TTT Tshering Tours.",
+    "Discover Bhutan's finest hotels, resorts, and farm-stays, from luxury Amankora and Taj Tashi to authentic village homestays arranged by TTT Tshering Tours.",
 };
 
 const luxuryHotels = [
@@ -33,7 +33,7 @@ const luxuryHotels = [
     type: "Luxury Heritage Hotel",
     locations: "Paro",
     description:
-      "An award-winning luxury hotel in the Paro valley, built entirely by Bhutanese craftsmen using traditional techniques. Zhiwa Ling means 'resting place of the divine' — an ethos felt throughout the hand-painted interiors, carved woodwork, and garden landscaping.",
+      "An award-winning luxury hotel in the Paro valley, built entirely by Bhutanese craftsmen using traditional techniques. Zhiwa Ling means 'resting place of the divine', an ethos felt throughout the hand-painted interiors, carved woodwork, and garden landscaping.",
     stars: 5,
   },
   {
@@ -49,7 +49,7 @@ const luxuryHotels = [
     type: "Luxury Boutique",
     locations: "Paro",
     description:
-      "COMO's signature Bhutan property sits above the Paro valley with panoramic views to Paro Taktsang. Uma blends contemporary design with local materials, and COMO Shambhala's renowned wellness philosophy is present throughout — from the spa treatments to the organic cuisine.",
+      "COMO's signature Bhutan property sits above the Paro valley with panoramic views to Paro Taktsang. Uma blends contemporary design with local materials, and COMO Shambhala's renowned wellness philosophy is present throughout, from the spa treatments to the organic cuisine.",
     stars: 5,
   },
   {
@@ -65,7 +65,7 @@ const luxuryHotels = [
     type: "Boutique Wilderness Lodge",
     locations: "Gangtey, Phobjikha Valley",
     description:
-      "Perched beside the ancient Gangtey Monastery overlooking the Phobjikha valley — winter home of the endangered black-necked crane — this intimate lodge offers some of the most spectacular scenery in Bhutan. Perfect for nature lovers seeking remoteness without sacrificing comfort.",
+      "Perched beside the ancient Gangtey Monastery overlooking the Phobjikha valley, winter home of the endangered black-necked crane, this intimate lodge offers some of the most spectacular scenery in Bhutan. Perfect for nature lovers seeking remoteness without sacrificing comfort.",
     stars: 5,
   },
 ];
@@ -79,7 +79,7 @@ const accommodationTypes = [
   {
     title: "Resorts",
     description:
-      "Bhutan's boutique resorts offer an elevated experience — many designed by award-winning architects using traditional materials and techniques. We work closely with 5-star properties including Amankora, Taj Tashi, and Uma by Como for guests seeking the finest accommodation.",
+      "Bhutan's boutique resorts offer an elevated experience, many designed by award-winning architects using traditional materials and techniques. We work closely with 5-star properties including Amankora, Taj Tashi, and Uma by Como for guests seeking the finest accommodation.",
   },
   {
     title: "Farm-Stays & Homestays",
@@ -95,7 +95,7 @@ export default function HotelsPage() {
       <PageHero
         eyebrow="Where You&apos;ll Stay"
         title="Hotels & Accommodation"
-        description="From authentic farm-stays to world-class luxury lodges — we arrange accommodation to match every style and budget."
+        description="From authentic farm-stays to world-class luxury lodges, we arrange accommodation to match every style and budget."
       />
 
       {/* Accommodation types */}

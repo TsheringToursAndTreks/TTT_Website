@@ -33,7 +33,7 @@ export default function HeroSection() {
                 འབྲུག་ཡུལ།
               </span>
               <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-brand-orange align-middle">
-                Druk Yul — Land of the Thunder Dragon
+                Druk Yul · Land of the Thunder Dragon
               </span>
             </motion.p>
 
@@ -53,9 +53,9 @@ export default function HeroSection() {
               transition={{ duration: 0.7, delay: 0.4 }}
               className="text-gray-600 text-lg max-w-xl font-sans leading-relaxed mb-10"
             >
-              Cultural journeys, Himalayan treks, and slow travel across Bhutan
-              — planned in Thimphu by the people who call these valleys home,
-              since 2005.
+              Cultural journeys, Himalayan treks, and slow travel across
+              Bhutan, planned in Thimphu since 2005 by the people who call
+              these valleys home.
             </motion.p>
 
             <motion.div
@@ -90,7 +90,7 @@ export default function HeroSection() {
             </motion.p>
           </div>
 
-          {/* Arched photo — a dzong window onto the Himalaya */}
+          {/* Arched photo: a dzong window onto the Himalaya */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
