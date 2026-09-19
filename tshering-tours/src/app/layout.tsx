@@ -66,7 +66,7 @@ const notoTibetan = Noto_Serif_Tibetan({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "TTT Tshering Tours and Treks | Bhutan Travel Experts",
+  title: "Tshering Tours and Treks",
   description:
     "Discover authentic Bhutan with TTT Tshering Tours and Treks. Licensed Bhutanese tour operator offering cultural tours, trekking, and immersive Himalayan experiences.",
   keywords:
@@ -74,14 +74,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
-    title: "TTT Tshering Tours and Treks | Bhutan Travel Experts",
+    title: "Tshering Tours and Treks",
     description:
       "Authentic Bhutan journeys crafted in Thimphu since 2005: cultural tours, Himalayan treks, nature and cycling tours.",
     images: [{ url: OG_IMAGE, width: 1600, height: 1067, alt: "Paro Taktsang, the Tiger's Nest monastery, Bhutan" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "TTT Tshering Tours and Treks | Bhutan Travel Experts",
+    title: "Tshering Tours and Treks",
     description:
       "Authentic Bhutan journeys crafted in Thimphu since 2005: cultural tours, Himalayan treks, nature and cycling tours.",
     images: [OG_IMAGE],

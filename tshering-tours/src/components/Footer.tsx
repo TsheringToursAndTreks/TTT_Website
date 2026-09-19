@@ -164,7 +164,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-gray-500 font-mono text-[10px] uppercase tracking-[0.15em]">
           <p>© 2026 TTT Tshering Tours and Treks</p>
-          <p>Tourism Council of Bhutan · ABTO Member</p>
+          <p>Developed by Pema Losel Maurer</p>
         </div>
       </div>
     </footer>
